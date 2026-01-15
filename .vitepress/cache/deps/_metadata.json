@@ -1,0 +1,49 @@
+{
+  "hash": "7a35d12e",
+  "configHash": "d44e031b",
+  "lockfileHash": "068f5bb8",
+  "browserHash": "99a81af6",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "add6aec9",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "7d5e43e5",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "61ba43f0",
+      "needsInterop": false
+    },
+    "markmap-lib": {
+      "src": "../../../node_modules/markmap-lib/dist/browser/index.mjs",
+      "file": "markmap-lib.js",
+      "fileHash": "9ba1ee5e",
+      "needsInterop": false
+    },
+    "markmap-view": {
+      "src": "../../../node_modules/markmap-view/dist/index.js",
+      "file": "markmap-view.js",
+      "fileHash": "7e351f5c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-HVFX4WPI": {
+      "file": "chunk-HVFX4WPI.js"
+    },
+    "chunk-QE257C5J": {
+      "file": "chunk-QE257C5J.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
