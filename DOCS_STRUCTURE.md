@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # 文档目录结构
 
 ## 一、前端开发 (frontend)

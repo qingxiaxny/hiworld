@@ -1,3 +1,16 @@
-# With Vue
+# TypeScript + Vue
 
-<!-- 待编写 -->
+本章节将介绍 TypeScript + Vue 的相关内容。
+
+## 学习目标
+
+通过本章学习，你将掌握：
+
+- TypeScript + Vue 的基本概念
+- TypeScript + Vue 的核心用法
+- TypeScript + Vue 的最佳实践
+
+## 内容大纲
+
+> 内容正在编写中...
+

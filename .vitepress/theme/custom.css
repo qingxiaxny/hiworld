@@ -203,11 +203,13 @@ body {
 }
 
 .home-title {
-  font-size: 48px;
-  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 46px;
+  font-weight: 600;
   color: var(--vp-c-text-1);
   margin-bottom: 60px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .career-tags {
@@ -560,4 +562,22 @@ body {
 .mindmap-svg path {
   stroke-width: 2.5 !important;
   opacity: 0.6 !important;
+}
+
+/* 导航栏背景统一 - 覆盖VitePress默认的侧边栏同色设计 */
+.VPNavBar .wrapper {
+  background: var(--vp-nav-bg-color, var(--vp-c-bg)) !important;
+}
+
+.VPNavBar .container {
+  background: transparent !important;
+}
+
+/* 导航栏左侧区域（logo区域）背景统一 */
+.VPNavBar .title {
+  background: transparent !important;
+}
+
+.VPNavBarTitle {
+  background: transparent !important;
 }

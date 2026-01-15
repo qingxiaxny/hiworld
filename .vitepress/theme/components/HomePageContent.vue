@@ -16,10 +16,10 @@
     <div class="progress-section">
       <div class="progress-label">
         <span>学习进度</span>
-        <span class="progress-percentage">35%</span>
+        <span class="progress-percentage">{{ learningProgress }}%</span>
       </div>
       <div class="progress-bar-container">
-        <div class="progress-bar-fill" style="width: 35%"></div>
+        <div class="progress-bar-fill" :style="{ width: learningProgress + '%' }"></div>
       </div>
     </div>
     <div class="mindmap-container">
@@ -43,10 +43,11 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch, nextTick } from 'vue'
+import { ref, computed, onMounted, watch, nextTick, onUnmounted } from 'vue'
 import { Transformer } from 'markmap-lib'
 import { Markmap } from 'markmap-view'
 import { careerMindmaps } from '../data/careerMindmaps.js'
+import { careerPaths, pathDocCounts } from '../data/careerPaths.js'
 
 const careerTags = ['前端工程师', '后端工程师', '全栈工程师', 'AI 工程师', '移动端开发', '算法工程师', 'UI/UX 设计师', '数据工程师', 'DevOps 工程师', '测试工程师', '架构师', '产品经理', '游戏开发者', '区块链开发', '机器学习工程师', '数据分析师', '云计算工程师', '安全工程师', '嵌入式开发', '桌面应用开发', '小程序开发', '技术写作者', '开源贡献者', '独立开发者']
 const selectedTag = ref(null)
@@ -56,6 +57,7 @@ const currentQuestion = ref(0)
 const answers = ref([])
 const recommendedTags = ref({ tier1: [], tier2: [], tier3: [] })
 const svgRef = ref(null)
+const learningProgress = ref(0)
 let markmapInstance = null
 
 const defaultMindmap = `# 学习路径
@@ -190,10 +192,64 @@ function getTagClass(tag) {
   else if (recommendedTags.value.tier3.includes(tag)) classes.push('recommend-tier3')
   return classes.join(' ')
 }
+
+function calculateProgress() {
+  if (typeof window === 'undefined' || !selectedTag.value) {
+    learningProgress.value = 0
+    return
+  }
+  const paths = careerPaths[selectedTag.value] || []
+  let totalDocs = 0
+  let learnedDocs = 0
+  
+  // 获取所有localStorage中的learned记录
+  const learnedKeys = []
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key && key.startsWith('learned:')) {
+      learnedKeys.push(key.replace('learned:', ''))
+    }
+  }
+  
+  // 计算该职业路径下的总文档数和已学习数
+  paths.forEach(path => {
+    const count = pathDocCounts[path] || 0
+    totalDocs += count
+    // 统计该路径下已学习的文档
+    learnedKeys.forEach(learnedPath => {
+      if (learnedPath.startsWith(path)) {
+        learnedDocs++
+      }
+    })
+  })
+  
+  if (totalDocs > 0) {
+    learningProgress.value = Math.round((learnedDocs / totalDocs) * 100)
+  } else {
+    learningProgress.value = 0
+  }
+}
+
+function handleProgressUpdate() {
+  calculateProgress()
+}
+
 onMounted(() => {
   const savedResults = localStorage.getItem('careerQuizResults')
   if (savedResults) recommendedTags.value = JSON.parse(savedResults)
   const savedCareer = localStorage.getItem('selectedCareer')
   if (savedCareer) { selectedTag.value = savedCareer; showLearningPath.value = true }
+  calculateProgress()
+  window.addEventListener('learning-progress-updated', handleProgressUpdate)
+})
+
+onUnmounted(() => {
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('learning-progress-updated', handleProgressUpdate)
+  }
+})
+
+watch(selectedTag, () => {
+  calculateProgress()
 })
 </script>
