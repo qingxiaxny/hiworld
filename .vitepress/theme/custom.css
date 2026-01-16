@@ -581,3 +581,14 @@ body {
 .VPNavBarTitle {
   background: transparent !important;
 }
+
+/* 导航栏搜索按钮固定位置 - 相对于窗口固定 */
+.VPNavBarSearch {
+  position: fixed !important;
+  left: 80px !important;
+  top: 0 !important;
+  height: var(--vp-nav-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 50 !important;
+}

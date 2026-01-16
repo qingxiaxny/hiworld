@@ -6,6 +6,7 @@ export default defineConfig({
   title: "HiWorld - 编程学习平台",
   description: "从零开始，轻松学习编程",
   themeConfig: {
+    siteTitle: false,
     footer: {
       message: '本网站由 <a href="https://www.qingxia.ltd" target="_blank">清夏工作室</a> 制作与维护',
       copyright: 'Copyright © 2026 HiWorld.World'
@@ -37,7 +38,9 @@ export default defineConfig({
       { 
         component: 'MegaMenu'
       },
-      { text: '测验', link: '/quiz' },
+      { 
+        component: 'QuizMenu'
+      },
       { text: '关于', link: '/about' }
     ],
 

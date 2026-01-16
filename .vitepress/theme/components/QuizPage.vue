@@ -119,8 +119,17 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { quizCategories } from '../data/quizData.js'
+
+const props = defineProps({
+  categoryId: {
+    type: String,
+    default: ''
+  }
+})
+
+const emit = defineEmits(['close'])
 
 // 分类分组配置（和文档 MegaMenu 对齐）
 const categoryGroups = [
@@ -204,9 +213,21 @@ function startQuiz(cat) {
   resetQuiz()
 }
 
+function startQuizById(id) {
+  const cat = quizMap[id]
+  if (cat) {
+    startQuiz(cat)
+  }
+}
+
 function exitQuiz() {
-  quizMode.value = false
-  currentCat.value = null
+  // 如果是从菜单进入的，直接关闭
+  if (props.categoryId) {
+    emit('close')
+  } else {
+    quizMode.value = false
+    currentCat.value = null
+  }
 }
 
 function resetQuiz() {
@@ -242,7 +263,28 @@ function nextQuestion() {
   }
 }
 
-function retryQuiz() { resetQuiz() }
+function retryQuiz() { 
+  // 重新随机抽题
+  if (currentCat.value) {
+    const allQuestions = shuffle(currentCat.value.questions || []).slice(0, 10)
+    shuffledQuestions.value = allQuestions
+  }
+  resetQuiz() 
+}
+
+// 如果传入了 categoryId，直接开始答题
+onMounted(() => {
+  if (props.categoryId) {
+    startQuizById(props.categoryId)
+  }
+})
+
+// 监听 categoryId 变化
+watch(() => props.categoryId, (newId) => {
+  if (newId) {
+    startQuizById(newId)
+  }
+})
 </script>
 
 <style scoped>
