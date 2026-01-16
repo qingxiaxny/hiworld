@@ -7,6 +7,7 @@ import HomePage from './components/HomePage.vue'
 import HomePageContent from './components/HomePageContent.vue'
 import LearnedButton from './components/LearnedButton.vue'
 import QuizPage from './components/QuizPage.vue'
+import ForumPage from './components/ForumPage.vue'
 import Logo from './components/Logo.vue'
 import './custom.css'
 
@@ -25,5 +26,6 @@ export default {
     app.component('HomePageContent', HomePageContent)
     app.component('LearnedButton', LearnedButton)
     app.component('QuizPage', QuizPage)
+    app.component('ForumPage', ForumPage)
   }
 } satisfies Theme

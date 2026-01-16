@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     siteTitle: false,
     footer: {
-      message: '本网站由 <a href="https://www.qingxia.ltd" target="_blank">清夏工作室</a> 制作与维护',
+      message: '本网站由 <a href="https://www.qingxia.ltd" target="_blank">清夏工作室</a> 制作与维护 | <a href="https://github.com/qingxiaxny/hiworld" target="_blank">GitHub</a>',
       copyright: 'Copyright © 2026 HiWorld.World'
     },
     // 启用本地搜索
@@ -41,6 +41,7 @@ export default defineConfig({
       { 
         component: 'QuizMenu'
       },
+      { text: '论坛', link: '/forum' },
       { text: '关于', link: '/about' }
     ],
 

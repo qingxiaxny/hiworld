@@ -27,7 +27,7 @@ HiWorld 是一个开源的编程学习平台，基于 VitePress 构建。
 ## 联系方式
 
 - 网站：[qingxia.ltd](https://www.qingxia.ltd)
-- GitHub：[项目地址]
+- GitHub：[qingxiaxny/hiworld](https://github.com/qingxiaxny/hiworld)
 
 ---
 
