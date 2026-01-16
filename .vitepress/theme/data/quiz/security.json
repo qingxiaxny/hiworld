@@ -1,0 +1,22 @@
+[
+  { "q": "XSS 攻击是什么？", "options": ["SQL 注入", "跨站脚本攻击", "拒绝服务", "中间人攻击"], "answer": "跨站脚本攻击", "explanation": "XSS 是跨站脚本攻击，攻击者注入恶意脚本。" },
+  { "q": "CSRF 攻击如何防御？", "options": ["使用 HTTPS", "使用 Token 验证", "使用强密码", "使用防火墙"], "answer": "使用 Token 验证", "explanation": "CSRF 防御使用 Token 验证，验证请求来源。" },
+  { "q": "HTTPS 使用什么加密？", "options": ["对称加密", "非对称加密 + 对称加密", "只用非对称", "不加密"], "answer": "非对称加密 + 对称加密", "explanation": "HTTPS 用非对称加密交换密钥，再用对称加密传输数据。" },
+  { "q": "JWT 由几部分组成？", "options": ["2 部分", "3 部分", "4 部分", "1 部分"], "answer": "3 部分", "explanation": "JWT 由 Header、Payload、Signature 三部分组成。" },
+  { "q": "密码应该如何存储？", "options": ["明文", "加盐哈希", "Base64 编码", "简单加密"], "answer": "加盐哈希", "explanation": "密码应加盐哈希存储，不能明文或简单加密。" },
+  { "q": "SQL 注入是什么？", "options": ["XSS 攻击", "通过输入恶意 SQL 代码攻击数据库", "CSRF 攻击", "DDoS 攻击"], "answer": "通过输入恶意 SQL 代码攻击数据库", "explanation": "SQL 注入通过输入恶意 SQL 代码攻击数据库。" },
+  { "q": "如何防止 SQL 注入？", "options": ["使用拼接", "使用参数化查询", "不使用数据库", "使用明文"], "answer": "使用参数化查询", "explanation": "参数化查询可防止 SQL 注入。" },
+  { "q": "什么是 CORS？", "options": ["跨域攻击", "跨域资源共享", "加密协议", "认证方式"], "answer": "跨域资源共享", "explanation": "CORS 是跨域资源共享，允许跨域请求。" },
+  { "q": "OAuth 2.0 是什么？", "options": ["加密协议", "授权框架", "认证协议", "传输协议"], "answer": "授权框架", "explanation": "OAuth 2.0 是授权框架，用于第三方登录。" },
+  { "q": "什么是中间人攻击？", "options": ["SQL 注入", "攻击者拦截通信", "XSS 攻击", "暴力破解"], "answer": "攻击者拦截通信", "explanation": "中间人攻击是攻击者拦截并修改通信。" },
+  { "q": "HTTPS 的默认端口是？", "options": ["80", "443", "8080", "22"], "answer": "443", "explanation": "HTTPS 的默认端口是 443。" },
+  { "q": "什么是 DDoS 攻击？", "options": ["SQL 注入", "分布式拒绝服务攻击", "XSS 攻击", "CSRF 攻击"], "answer": "分布式拒绝服务攻击", "explanation": "DDoS 是分布式拒绝服务攻击，用大量请求瘫痪服务。" },
+  { "q": "如何防止 XSS 攻击？", "options": ["使用 HTTPS", "对用户输入进行转义", "使用强密码", "使用防火墙"], "answer": "对用户输入进行转义", "explanation": "对用户输入转义可防止 XSS 攻击。" },
+  { "q": "什么是 CSP？", "options": ["加密协议", "内容安全策略", "认证方式", "传输协议"], "answer": "内容安全策略", "explanation": "CSP 是内容安全策略，防止 XSS 攻击。" },
+  { "q": "什么是 HSTS？", "options": ["加密协议", "强制使用 HTTPS", "认证方式", "传输协议"], "answer": "强制使用 HTTPS", "explanation": "HSTS 强制浏览器使用 HTTPS。" },
+  { "q": "什么是暴力破解？", "options": ["SQL 注入", "尝试所有可能的密码", "XSS 攻击", "CSRF 攻击"], "answer": "尝试所有可能的密码", "explanation": "暴力破解是尝试所有可能的密码。" },
+  { "q": "如何防止暴力破解？", "options": ["使用简单密码", "限制登录次数、验证码", "不使用密码", "使用明文"], "answer": "限制登录次数、验证码", "explanation": "限制登录次数和使用验证码可防止暴力破解。" },
+  { "q": "什么是双因素认证？", "options": ["两个密码", "密码 + 其他验证方式", "两个用户名", "两次登录"], "answer": "密码 + 其他验证方式", "explanation": "双因素认证是密码加其他验证方式，如 OTP。" },
+  { "q": "什么是 Session 劫持？", "options": ["SQL 注入", "窃取用户会话", "XSS 攻击", "CSRF 攻击"], "answer": "窃取用户会话", "explanation": "Session 劫持是攻击者窃取用户会话。" },
+  { "q": "如何安全传输敏感数据？", "options": ["明文传输", "使用 HTTPS 加密", "使用 HTTP", "不传输"], "answer": "使用 HTTPS 加密", "explanation": "敏感数据应使用 HTTPS 加密传输。" }
+]

@@ -1,0 +1,22 @@
+[
+  { "q": "以下哪个不是 JavaScript 的数据类型？", "options": ["undefined", "boolean", "float", "symbol"], "answer": "float", "explanation": "JS 的基本类型有：string、number、boolean、null、undefined、symbol、bigint，没有 float。" },
+  { "q": "const 声明的变量可以被重新赋值吗？", "options": ["可以", "不可以", "只能赋值一次", "取决于类型"], "answer": "不可以", "explanation": "const 声明的变量不能重新赋值，但对象属性可以修改。let 和 var 可以重新赋值。" },
+  { "q": "Array.map() 方法返回什么？", "options": ["undefined", "原数组", "新数组", "布尔值"], "answer": "新数组", "explanation": "map() 返回新数组，不修改原数组。forEach() 返回 undefined，filter() 返回过滤后的新数组。" },
+  { "q": "=== 和 == 的区别是？", "options": ["没有区别", "=== 比较值和类型", "== 更严格", "=== 只比较值"], "answer": "=== 比较值和类型", "explanation": "=== 严格相等，不进行类型转换。== 宽松相等，会进行类型转换，如 '1' == 1 为 true。" },
+  { "q": "Promise 的三种状态是？", "options": ["start/end/error", "pending/fulfilled/rejected", "open/close/error", "init/done/fail"], "answer": "pending/fulfilled/rejected", "explanation": "Promise 初始状态是 pending，成功变为 fulfilled，失败变为 rejected，状态不可逆。" },
+  { "q": "typeof null 返回什么？", "options": ["null", "undefined", "object", "boolean"], "answer": "object", "explanation": "typeof null 返回 'object' 是 JS 的一个著名 bug，null 实际上是基本类型。" },
+  { "q": "如何判断一个变量是否为数组？", "options": ["typeof", "Array.isArray()", "instanceof Array", "后两者都可以"], "answer": "后两者都可以", "explanation": "Array.isArray() 是最可靠的方法，instanceof Array 也可以，typeof 返回 'object' 不准确。" },
+  { "q": "箭头函数和普通函数的主要区别是？", "options": ["语法不同", "没有自己的 this", "不能返回值", "必须有参数"], "answer": "没有自己的 this", "explanation": "箭头函数没有自己的 this，继承外层 this。普通函数的 this 取决于调用方式。" },
+  { "q": "let 和 var 的区别是？", "options": ["没有区别", "let 有块级作用域", "var 有块级作用域", "let 会变量提升"], "answer": "let 有块级作用域", "explanation": "let 有块级作用域，var 只有函数作用域。两者都会变量提升，但 let 有暂时死区。" },
+  { "q": "如何深拷贝一个对象？", "options": ["Object.assign()", "展开运算符", "JSON.parse(JSON.stringify())", "直接赋值"], "answer": "JSON.parse(JSON.stringify())", "explanation": "JSON 方法可深拷贝，但不支持函数、undefined、Symbol。structuredClone() 是更好的选择。" },
+  { "q": "事件冒泡是什么？", "options": ["事件从外向内传播", "事件从内向外传播", "事件不传播", "事件只触发一次"], "answer": "事件从内向外传播", "explanation": "事件冒泡从目标元素向上传播到父元素，可用 stopPropagation() 阻止。" },
+  { "q": "async/await 是什么的语法糖？", "options": ["回调函数", "Promise", "Generator", "Observable"], "answer": "Promise", "explanation": "async/await 是 Promise 的语法糖，使异步代码看起来像同步代码，更易读。" },
+  { "q": "闭包是什么？", "options": ["一种数据类型", "函数和其词法环境的组合", "一种设计模式", "异步操作"], "answer": "函数和其词法环境的组合", "explanation": "闭包是函数和其词法环境的组合，使函数能访问外层作用域的变量。" },
+  { "q": "如何阻止事件冒泡？", "options": ["event.preventDefault()", "event.stopPropagation()", "return false", "event.stop()"], "answer": "event.stopPropagation()", "explanation": "stopPropagation() 阻止冒泡，preventDefault() 阻止默认行为，return false 两者都阻止。" },
+  { "q": "NaN === NaN 的结果是？", "options": ["true", "false", "undefined", "报错"], "answer": "false", "explanation": "NaN 不等于任何值，包括自己。用 Number.isNaN() 或 Object.is() 判断 NaN。" },
+  { "q": "如何将字符串转为数字？", "options": ["Number()", "parseInt()", "parseFloat()", "以上都可以"], "answer": "以上都可以", "explanation": "Number() 最严格，parseInt/parseFloat 更灵活。一元加号 +'123' 也可以转换。" },
+  { "q": "数组的 filter() 方法用于？", "options": ["遍历数组", "过滤数组", "查找元素", "排序数组"], "answer": "过滤数组", "explanation": "filter() 返回满足条件的新数组，find() 返回第一个满足条件的元素。" },
+  { "q": "this 在普通函数中指向什么？", "options": ["window/global", "undefined", "函数本身", "取决于调用方式"], "answer": "取决于调用方式", "explanation": "this 指向取决于函数如何被调用：方法调用指向对象，普通调用指向 window/global。" },
+  { "q": "如何判断对象是否有某个属性？", "options": ["obj.hasOwnProperty()", "in 操作符", "obj[key] !== undefined", "以上都可以"], "answer": "以上都可以", "explanation": "hasOwnProperty() 只检查自有属性，in 检查包括继承属性，三种方法各有用途。" },
+  { "q": "解构赋值的作用是？", "options": ["销毁变量", "从数组/对象中提取值", "合并对象", "复制数组"], "answer": "从数组/对象中提取值", "explanation": "解构赋值快速提取数组/对象的值，如 const {a, b} = obj 或 const [x, y] = arr。" }
+]

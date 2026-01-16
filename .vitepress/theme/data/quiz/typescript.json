@@ -1,0 +1,22 @@
+[
+  { "q": "TypeScript 中如何定义可选属性？", "options": ["属性名!", "属性名?", "属性名*", "?属性名"], "answer": "属性名?", "explanation": "属性名? 表示可选属性，! 表示非空断言，表示该属性必定存在。" },
+  { "q": "interface 和 type 的主要区别是？", "options": ["没有区别", "interface 可以继承和合并", "type 不能定义对象", "interface 不能定义函数"], "answer": "interface 可以继承和合并", "explanation": "interface 支持继承和声明合并，type 不支持。type 更灵活，支持联合类型等。" },
+  { "q": "如何定义一个只读属性？", "options": ["const", "readonly", "final", "immutable"], "answer": "readonly", "explanation": "readonly 关键字定义只读属性，初始化后不能修改。const 用于变量声明。" },
+  { "q": "泛型的作用是？", "options": ["提高性能", "类型复用和约束", "代码压缩", "运行时检查"], "answer": "类型复用和约束", "explanation": "泛型使代码更灵活，同时保持类型安全，如 Array<T>、function<T>(arg: T): T。" },
+  { "q": "any 和 unknown 的区别是？", "options": ["没有区别", "unknown 更安全，需要类型检查", "any 更安全", "unknown 不能赋值"], "answer": "unknown 更安全，需要类型检查", "explanation": "unknown 是类型安全的 any，使用前必须进行类型检查，any 跳过类型检查。" },
+  { "q": "如何定义联合类型？", "options": ["type A & B", "type A | B", "type A + B", "type A, B"], "answer": "type A | B", "explanation": "| 定义联合类型（或），& 定义交叉类型（且），如 type Status = 'success' | 'error'。" },
+  { "q": "如何定义交叉类型？", "options": ["type A & B", "type A | B", "type A + B", "type A, B"], "answer": "type A & B", "explanation": "& 定义交叉类型，合并多个类型的属性，如 type Combined = A & B。" },
+  { "q": "keyof 操作符的作用是？", "options": ["获取对象的值", "获取对象的键的联合类型", "创建新对象", "删除属性"], "answer": "获取对象的键的联合类型", "explanation": "keyof 返回对象键的联合类型，如 keyof {a: 1, b: 2} 返回 'a' | 'b'。" },
+  { "q": "typeof 在 TypeScript 中可以用于？", "options": ["只能运行时", "获取变量的类型", "只能用于基本类型", "创建新类型"], "answer": "获取变量的类型", "explanation": "typeof 可在类型位置获取变量的类型，如 type T = typeof obj。" },
+  { "q": "如何定义函数返回值类型？", "options": ["function fn(): Type", "function fn() -> Type", "function fn() => Type", "function fn() Type"], "answer": "function fn(): Type", "explanation": "冒号后跟返回类型，如 function add(a: number, b: number): number { return a + b }。" },
+  { "q": "never 类型表示什么？", "options": ["空值", "永不返回的函数", "任意类型", "未知类型"], "answer": "永不返回的函数", "explanation": "never 表示永不返回，如抛出异常或无限循环的函数，也用于不可能的类型。" },
+  { "q": "如何进行类型断言？", "options": ["value as Type", "<Type>value", "两者都可以", "value: Type"], "answer": "两者都可以", "explanation": "as 语法和尖括号语法都可以，as 在 JSX 中更安全，如 value as string。" },
+  { "q": "Partial<T> 工具类型的作用是？", "options": ["所有属性必填", "所有属性可选", "所有属性只读", "移除所有属性"], "answer": "所有属性可选", "explanation": "Partial<T> 使所有属性可选，Required<T> 使所有属性必填，Readonly<T> 使所有属性只读。" },
+  { "q": "Required<T> 工具类型的作用是？", "options": ["所有属性必填", "所有属性可选", "所有属性只读", "移除所有属性"], "answer": "所有属性必填", "explanation": "Required<T> 使所有属性必填，与 Partial 相反。" },
+  { "q": "Pick<T, K> 工具类型的作用是？", "options": ["选取部分属性", "排除部分属性", "合并类型", "创建新类型"], "answer": "选取部分属性", "explanation": "Pick<T, K> 从 T 中选取指定属性，Omit<T, K> 排除指定属性。" },
+  { "q": "Omit<T, K> 工具类型的作用是？", "options": ["选取部分属性", "排除部分属性", "合并类型", "创建新类型"], "answer": "排除部分属性", "explanation": "Omit<T, K> 从 T 中排除指定属性，与 Pick 相反。" },
+  { "q": "如何定义数组类型？", "options": ["Type[]", "Array<Type>", "两者都可以", "[Type]"], "answer": "两者都可以", "explanation": "Type[] 和 Array<Type> 等价，都表示元素类型为 Type 的数组。" },
+  { "q": "枚举 enum 的默认值从几开始？", "options": ["1", "0", "-1", "undefined"], "answer": "0", "explanation": "enum 默认从 0 开始，可手动指定值，如 enum Color { Red = 1, Green = 2 }。" },
+  { "q": "如何定义元组类型？", "options": ["[string, number]", "Array<string, number>", "Tuple<string, number>", "{string, number}"], "answer": "[string, number]", "explanation": "元组用方括号定义，如 [string, number] 表示第一个元素是字符串，第二个是数字。" },
+  { "q": "tsconfig.json 中 strict 选项的作用是？", "options": ["严格模式，启用所有严格检查", "禁用检查", "只检查语法", "优化编译"], "answer": "严格模式，启用所有严格检查", "explanation": "strict: true 启用所有严格检查，包括 noImplicitAny、strictNullChecks 等。" }
+]

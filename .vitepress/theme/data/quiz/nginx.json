@@ -1,0 +1,22 @@
+[
+  { "q": "Nginx 主要用于什么？", "options": ["数据库", "Web 服务器/反向代理", "消息队列", "缓存"], "answer": "Web 服务器/反向代理", "explanation": "Nginx 是高性能 Web 服务器和反向代理。" },
+  { "q": "Nginx 配置文件的默认位置是？", "options": ["/etc/nginx/nginx.conf", "/var/nginx.conf", "/nginx/config", "/etc/config"], "answer": "/etc/nginx/nginx.conf", "explanation": "Nginx 配置文件默认在 /etc/nginx/nginx.conf。" },
+  { "q": "location 块的作用是？", "options": ["定义服务器", "匹配 URL 路径", "定义日志", "定义缓存"], "answer": "匹配 URL 路径", "explanation": "location 块匹配 URL 路径，执行相应的配置。" },
+  { "q": "如何配置反向代理？", "options": ["reverse_proxy", "proxy_pass", "forward_to", "redirect"], "answer": "proxy_pass", "explanation": "proxy_pass 配置反向代理，转发请求到后端服务器。" },
+  { "q": "Nginx 如何实现负载均衡？", "options": ["不支持", "upstream 块", "balance 块", "load 块"], "answer": "upstream 块", "explanation": "upstream 块定义后端服务器组，实现负载均衡。" },
+  { "q": "Nginx 的 worker_processes 配置是什么？", "options": ["工作目录", "工作进程数", "工作线程", "工作模式"], "answer": "工作进程数", "explanation": "worker_processes 配置工作进程数，通常设为 CPU 核数。" },
+  { "q": "如何重新加载 Nginx 配置？", "options": ["nginx restart", "nginx -s reload", "nginx reload", "nginx -r"], "answer": "nginx -s reload", "explanation": "nginx -s reload 重新加载配置，不中断服务。" },
+  { "q": "如何测试 Nginx 配置是否正确？", "options": ["nginx test", "nginx -t", "nginx check", "nginx -c"], "answer": "nginx -t", "explanation": "nginx -t 测试配置文件是否正确。" },
+  { "q": "Nginx 中 root 和 alias 的区别是？", "options": ["没有区别", "root 拼接 location，alias 替换 location", "alias 拼接 location", "root 替换 location"], "answer": "root 拼接 location，alias 替换 location", "explanation": "root 拼接 location 路径，alias 替换 location 路径。" },
+  { "q": "如何配置 HTTPS？", "options": ["ssl on", "listen 443 ssl + ssl_certificate", "https on", "secure on"], "answer": "listen 443 ssl + ssl_certificate", "explanation": "listen 443 ssl 监听 HTTPS，ssl_certificate 指定证书。" },
+  { "q": "Nginx 中 try_files 的作用是？", "options": ["尝试连接", "按顺序尝试文件", "尝试重启", "尝试缓存"], "answer": "按顺序尝试文件", "explanation": "try_files 按顺序尝试文件，常用于 SPA 路由。" },
+  { "q": "如何配置 Gzip 压缩？", "options": ["compress on", "gzip on", "zip on", "deflate on"], "answer": "gzip on", "explanation": "gzip on 启用 Gzip 压缩，减少传输大小。" },
+  { "q": "Nginx 负载均衡策略有哪些？", "options": ["只有轮询", "轮询/权重/IP 哈希/最少连接", "只有权重", "只有随机"], "answer": "轮询/权重/IP 哈希/最少连接", "explanation": "Nginx 支持多种负载均衡策略。" },
+  { "q": "如何配置静态文件缓存？", "options": ["cache on", "expires 指令", "static on", "file_cache on"], "answer": "expires 指令", "explanation": "expires 指令设置缓存过期时间。" },
+  { "q": "Nginx 中 server_name 的作用是？", "options": ["服务器 IP", "匹配域名", "服务器端口", "服务器路径"], "answer": "匹配域名", "explanation": "server_name 匹配请求的域名。" },
+  { "q": "如何查看 Nginx 版本？", "options": ["nginx version", "nginx -v", "nginx --version", "后两者都可以"], "answer": "后两者都可以", "explanation": "nginx -v 和 nginx --version 都可查看版本。" },
+  { "q": "Nginx 中 rewrite 的作用是？", "options": ["重写配置", "URL 重写/重定向", "重写日志", "重写缓存"], "answer": "URL 重写/重定向", "explanation": "rewrite 用于 URL 重写和重定向。" },
+  { "q": "如何配置跨域？", "options": ["cors on", "add_header Access-Control-Allow-Origin", "allow_cors", "cross_origin on"], "answer": "add_header Access-Control-Allow-Origin", "explanation": "add_header 添加 CORS 响应头。" },
+  { "q": "Nginx 中 upstream 的作用是？", "options": ["上游服务器", "定义后端服务器组", "上传文件", "更新配置"], "answer": "定义后端服务器组", "explanation": "upstream 定义后端服务器组，用于负载均衡。" },
+  { "q": "如何限制请求速率？", "options": ["rate_limit", "limit_req_zone + limit_req", "speed_limit", "request_limit"], "answer": "limit_req_zone + limit_req", "explanation": "limit_req_zone 定义限流区域，limit_req 应用限流。" }
+]

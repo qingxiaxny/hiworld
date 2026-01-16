@@ -5,6 +5,7 @@ import MegaMenu from './components/MegaMenu.vue'
 import HomePage from './components/HomePage.vue'
 import HomePageContent from './components/HomePageContent.vue'
 import LearnedButton from './components/LearnedButton.vue'
+import QuizPage from './components/QuizPage.vue'
 import './custom.css'
 
 export default {
@@ -19,5 +20,6 @@ export default {
     app.component('HomePage', HomePage)
     app.component('HomePageContent', HomePageContent)
     app.component('LearnedButton', LearnedButton)
+    app.component('QuizPage', QuizPage)
   }
 } satisfies Theme

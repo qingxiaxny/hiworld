@@ -1,0 +1,22 @@
+[
+  { "q": "Webpack 的核心概念有哪些？", "options": ["只有 entry", "entry/output/loader/plugin", "只有 plugin", "只有 loader"], "answer": "entry/output/loader/plugin", "explanation": "Webpack 四个核心概念：入口、输出、加载器、插件。" },
+  { "q": "Loader 的作用是？", "options": ["打包优化", "转换非 JS 文件", "代码分割", "热更新"], "answer": "转换非 JS 文件", "explanation": "Loader 转换 CSS、图片等非 JS 文件为 JS 模块。" },
+  { "q": "Plugin 和 Loader 的区别是？", "options": ["没有区别", "Loader 转换文件，Plugin 扩展功能", "Plugin 转换文件", "Loader 扩展功能"], "answer": "Loader 转换文件，Plugin 扩展功能", "explanation": "Loader 转换文件，Plugin 扩展 Webpack 功能。" },
+  { "q": "如何实现代码分割？", "options": ["不支持", "splitChunks 或动态 import", "只能手动分割", "使用 Loader"], "answer": "splitChunks 或动态 import", "explanation": "splitChunks 配置分割，动态 import() 实现懒加载。" },
+  { "q": "Tree Shaking 的作用是？", "options": ["代码压缩", "移除未使用的代码", "代码混淆", "热更新"], "answer": "移除未使用的代码", "explanation": "Tree Shaking 移除未使用的代码，减小包体积。" },
+  { "q": "Webpack 的 entry 配置是什么？", "options": ["输出文件", "入口文件", "加载器", "插件"], "answer": "入口文件", "explanation": "entry 指定 Webpack 的入口文件。" },
+  { "q": "Webpack 的 output 配置是什么？", "options": ["入口文件", "输出文件配置", "加载器", "插件"], "answer": "输出文件配置", "explanation": "output 配置打包输出的文件名和路径。" },
+  { "q": "如何处理 CSS 文件？", "options": ["直接导入", "使用 css-loader 和 style-loader", "不支持", "使用 Plugin"], "answer": "使用 css-loader 和 style-loader", "explanation": "css-loader 解析 CSS，style-loader 注入到 DOM。" },
+  { "q": "如何处理图片文件？", "options": ["直接导入", "使用 file-loader 或 asset module", "不支持", "使用 Plugin"], "answer": "使用 file-loader 或 asset module", "explanation": "file-loader 或 Webpack 5 的 asset module 处理图片。" },
+  { "q": "什么是 HMR？", "options": ["代码压缩", "热模块替换", "代码分割", "Tree Shaking"], "answer": "热模块替换", "explanation": "HMR 在开发时无需刷新页面更新模块。" },
+  { "q": "如何配置开发服务器？", "options": ["devServer", "server", "dev", "serve"], "answer": "devServer", "explanation": "devServer 配置开发服务器，支持 HMR。" },
+  { "q": "如何压缩代码？", "options": ["mode: production", "TerserPlugin", "两者都可以"], "answer": "两者都可以", "explanation": "mode: production 自动压缩，也可用 TerserPlugin。" },
+  { "q": "source-map 的作用是？", "options": ["代码压缩", "调试时映射到源代码", "代码分割", "热更新"], "answer": "调试时映射到源代码", "explanation": "source-map 在调试时映射到源代码，便于定位问题。" },
+  { "q": "如何配置别名？", "options": ["alias", "resolve.alias", "path.alias", "module.alias"], "answer": "resolve.alias", "explanation": "resolve.alias 配置路径别名。" },
+  { "q": "如何处理 TypeScript？", "options": ["直接支持", "使用 ts-loader 或 babel-loader", "不支持", "使用 Plugin"], "answer": "使用 ts-loader 或 babel-loader", "explanation": "ts-loader 或 babel-loader 处理 TypeScript。" },
+  { "q": "如何提取 CSS 到单独文件？", "options": ["style-loader", "MiniCssExtractPlugin", "css-loader", "不支持"], "answer": "MiniCssExtractPlugin", "explanation": "MiniCssExtractPlugin 提取 CSS 到单独文件。" },
+  { "q": "如何分析打包结果？", "options": ["webpack-bundle-analyzer", "analyze-plugin", "bundle-stats", "以上都可以"], "answer": "webpack-bundle-analyzer", "explanation": "webpack-bundle-analyzer 可视化分析打包结果。" },
+  { "q": "如何配置多入口？", "options": ["entry 配置为对象", "entry 配置为数组", "两者都可以", "不支持"], "answer": "两者都可以", "explanation": "entry 为对象或数组都支持多入口。" },
+  { "q": "如何配置环境变量？", "options": ["DefinePlugin", "env-plugin", "process.env", "以上都可以"], "answer": "DefinePlugin", "explanation": "DefinePlugin 定义全局环境变量。" },
+  { "q": "Webpack 5 相比 4 的改进是？", "options": ["没有改进", "持久化缓存、资源模块", "更慢", "不兼容"], "answer": "持久化缓存、资源模块", "explanation": "Webpack 5 增加持久化缓存和资源模块等功能。" }
+]

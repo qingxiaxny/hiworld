@@ -1,0 +1,22 @@
+[
+  { "q": "Docker 镜像和容器的关系是？", "options": ["相同概念", "镜像是容器的模板", "容器是镜像的模板", "没有关系"], "answer": "镜像是容器的模板", "explanation": "镜像是静态的模板，容器是镜像的运行实例。" },
+  { "q": "Dockerfile 中 CMD 和 ENTRYPOINT 的区别是？", "options": ["没有区别", "CMD 可被覆盖，ENTRYPOINT 不易被覆盖", "ENTRYPOINT 可被覆盖", "CMD 先执行"], "answer": "CMD 可被覆盖，ENTRYPOINT 不易被覆盖", "explanation": "CMD 是默认命令可被覆盖，ENTRYPOINT 是入口点不易被覆盖。" },
+  { "q": "docker-compose 的作用是？", "options": ["构建镜像", "管理多容器应用", "网络配置", "日志管理"], "answer": "管理多容器应用", "explanation": "docker-compose 用 YAML 定义和运行多容器应用。" },
+  { "q": "如何查看运行中的容器？", "options": ["docker list", "docker ps", "docker show", "docker running"], "answer": "docker ps", "explanation": "docker ps 显示运行中的容器，docker ps -a 显示所有容器。" },
+  { "q": "Docker 数据持久化用什么？", "options": ["cache", "volume", "storage", "disk"], "answer": "volume", "explanation": "volume 是 Docker 推荐的数据持久化方式。" },
+  { "q": "如何构建 Docker 镜像？", "options": ["docker create", "docker build", "docker make", "docker compile"], "answer": "docker build", "explanation": "docker build -t name:tag . 构建镜像。" },
+  { "q": "如何运行容器？", "options": ["docker start", "docker run", "docker exec", "docker begin"], "answer": "docker run", "explanation": "docker run 创建并运行容器。" },
+  { "q": "如何进入运行中的容器？", "options": ["docker enter", "docker exec -it", "docker attach", "后两者都可以"], "answer": "后两者都可以", "explanation": "docker exec -it 和 docker attach 都可进入容器。" },
+  { "q": "如何停止容器？", "options": ["docker end", "docker stop", "docker kill", "后两者都可以"], "answer": "后两者都可以", "explanation": "docker stop 优雅停止，docker kill 强制停止。" },
+  { "q": "如何删除容器？", "options": ["docker delete", "docker rm", "docker remove", "docker del"], "answer": "docker rm", "explanation": "docker rm 删除容器，docker rm -f 强制删除。" },
+  { "q": "如何删除镜像？", "options": ["docker rm", "docker rmi", "docker delete image", "docker remove image"], "answer": "docker rmi", "explanation": "docker rmi 删除镜像。" },
+  { "q": "Dockerfile 中 COPY 和 ADD 的区别是？", "options": ["没有区别", "ADD 支持 URL 和解压", "COPY 支持 URL", "ADD 更快"], "answer": "ADD 支持 URL 和解压", "explanation": "ADD 支持 URL 和自动解压，COPY 只复制文件。" },
+  { "q": "Dockerfile 中 RUN 的作用是？", "options": ["运行容器", "构建时执行命令", "启动命令", "健康检查"], "answer": "构建时执行命令", "explanation": "RUN 在构建镜像时执行命令。" },
+  { "q": "如何查看容器日志？", "options": ["docker log", "docker logs", "docker output", "docker print"], "answer": "docker logs", "explanation": "docker logs 查看容器日志，docker logs -f 实时查看。" },
+  { "q": "Docker 网络模式有哪些？", "options": ["只有 bridge", "bridge/host/none/overlay", "只有 host", "只有 overlay"], "answer": "bridge/host/none/overlay", "explanation": "四种网络模式，bridge 是默认。" },
+  { "q": "如何映射端口？", "options": ["-p 主机端口:容器端口", "-port", "-P", "-map"], "answer": "-p 主机端口:容器端口", "explanation": "-p 映射端口，-P 随机映射。" },
+  { "q": "如何挂载目录？", "options": ["-v 主机目录:容器目录", "-mount", "-volume", "以上都可以"], "answer": "以上都可以", "explanation": "-v 和 --mount 都可挂载目录。" },
+  { "q": "如何查看所有镜像？", "options": ["docker list images", "docker images", "docker show images", "docker ls images"], "answer": "docker images", "explanation": "docker images 显示所有镜像。" },
+  { "q": "Docker Hub 是什么？", "options": ["本地仓库", "官方镜像仓库", "私有仓库", "代码仓库"], "answer": "官方镜像仓库", "explanation": "Docker Hub 是 Docker 官方的镜像仓库。" },
+  { "q": "如何推送镜像到仓库？", "options": ["docker upload", "docker push", "docker publish", "docker send"], "answer": "docker push", "explanation": "docker push 推送镜像到仓库。" }
+]

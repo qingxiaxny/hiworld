@@ -1,0 +1,22 @@
+[
+  { "q": "Go 中如何声明变量？", "options": ["let x = 1", "var x = 1 或 x := 1", "int x = 1", "define x = 1"], "answer": "var x = 1 或 x := 1", "explanation": "Go 用 var 或 := 声明变量，:= 是简短声明，只能在函数内使用。" },
+  { "q": "goroutine 是什么？", "options": ["函数", "轻量级线程", "变量", "包"], "answer": "轻量级线程", "explanation": "goroutine 是 Go 的轻量级线程，由 Go 运行时管理，比系统线程更高效。" },
+  { "q": "channel 的作用是？", "options": ["文件操作", "goroutine 间通信", "网络请求", "日志记录"], "answer": "goroutine 间通信", "explanation": "channel 是 goroutine 间的通信机制，用于发送和接收数据。" },
+  { "q": "Go 中如何处理错误？", "options": ["try-catch", "返回 error 类型", "throw", "panic 只用于错误"], "answer": "返回 error 类型", "explanation": "Go 用返回 error 类型处理错误，通常作为最后一个返回值。" },
+  { "q": "defer 语句的执行时机是？", "options": ["立即执行", "函数返回前执行", "程序结束时", "下一行执行"], "answer": "函数返回前执行", "explanation": "defer 延迟执行，函数返回前执行，常用于资源清理。" },
+  { "q": "Go 中 slice 和 array 的区别是？", "options": ["没有区别", "slice 是动态的，array 是固定长度", "array 是动态的", "slice 是固定长度"], "answer": "slice 是动态的，array 是固定长度", "explanation": "array 长度固定，slice 是动态数组，可增长。" },
+  { "q": "Go 中如何创建 map？", "options": ["new Map()", "make(map[key]value)", "map{}", "createMap()"], "answer": "make(map[key]value)", "explanation": "Go 用 make 创建 map，指定键值类型。" },
+  { "q": "Go 中 interface{} 表示什么？", "options": ["空接口", "任意类型", "两者都对", "错误类型"], "answer": "两者都对", "explanation": "interface{} 是空接口，任何类型都实现了空接口，可表示任意类型。" },
+  { "q": "Go 中如何实现接口？", "options": ["implements 关键字", "隐式实现，实现所有方法即可", "extends 关键字", "interface 关键字"], "answer": "隐式实现，实现所有方法即可", "explanation": "Go 接口是隐式实现的，只要实现了接口的所有方法就自动实现了接口。" },
+  { "q": "Go 中 panic 和 recover 的作用是？", "options": ["错误处理", "异常抛出和恢复", "日志记录", "调试"], "answer": "异常抛出和恢复", "explanation": "panic 抛出异常，recover 在 defer 中捕获 panic，实现异常恢复。" },
+  { "q": "Go 中如何导入包？", "options": ["require", "include", "import", "use"], "answer": "import", "explanation": "Go 用 import 导入包，可导入标准库和第三方包。" },
+  { "q": "Go 中首字母大写表示什么？", "options": ["常量", "公开/导出", "私有", "类型"], "answer": "公开/导出", "explanation": "Go 中首字母大写表示公开（导出），小写表示私有。" },
+  { "q": "Go 中如何创建结构体？", "options": ["class", "struct", "type", "object"], "answer": "struct", "explanation": "Go 用 struct 定义结构体，没有类的概念。" },
+  { "q": "Go 中 select 语句用于？", "options": ["条件判断", "多路 channel 选择", "循环", "类型选择"], "answer": "多路 channel 选择", "explanation": "select 用于多个 channel 操作，类似 switch，但用于 channel。" },
+  { "q": "Go 中如何格式化代码？", "options": ["go format", "go fmt", "gofmt", "后两者都可以"], "answer": "后两者都可以", "explanation": "go fmt 和 gofmt 都可格式化代码，go fmt 是命令行工具。" },
+  { "q": "Go 中 context 包的作用是？", "options": ["上下文管理，控制 goroutine 生命周期", "日志记录", "配置管理", "错误处理"], "answer": "上下文管理，控制 goroutine 生命周期", "explanation": "context 用于传递请求范围的值和控制 goroutine 的取消。" },
+  { "q": "Go 中如何进行单元测试？", "options": ["test 包", "testing 包", "unittest 包", "jest"], "answer": "testing 包", "explanation": "Go 用 testing 包进行单元测试，测试文件以 _test.go 结尾。" },
+  { "q": "Go 中 := 和 = 的区别是？", "options": ["没有区别", ":= 声明并赋值，= 只赋值", "= 声明并赋值", ":= 只能用于全局"], "answer": ":= 声明并赋值，= 只赋值", "explanation": ":= 是简短声明，声明并赋值，= 只赋值给已声明的变量。" },
+  { "q": "Go 中如何处理 JSON？", "options": ["json 包", "encoding/json 包", "JSON.parse", "jsonify"], "answer": "encoding/json 包", "explanation": "Go 用 encoding/json 包处理 JSON，提供 Marshal 和 Unmarshal 函数。" },
+  { "q": "Go 中 sync.WaitGroup 的作用是？", "options": ["同步锁", "等待一组 goroutine 完成", "互斥锁", "读写锁"], "answer": "等待一组 goroutine 完成", "explanation": "WaitGroup 用于等待一组 goroutine 完成，提供 Add、Done、Wait 方法。" }
+]

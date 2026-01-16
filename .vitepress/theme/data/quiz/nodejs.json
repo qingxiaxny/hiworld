@@ -1,0 +1,22 @@
+[
+  { "q": "Node.js 使用什么引擎执行 JavaScript？", "options": ["SpiderMonkey", "V8", "Chakra", "JavaScriptCore"], "answer": "V8", "explanation": "Node.js 使用 Google 的 V8 引擎执行 JavaScript，V8 也是 Chrome 浏览器的引擎。" },
+  { "q": "npm 是什么的缩写？", "options": ["Node Package Manager", "New Project Manager", "Node Program Module", "Network Package Manager"], "answer": "Node Package Manager", "explanation": "npm 是 Node.js 的包管理器，用于安装、管理项目依赖。" },
+  { "q": "Express 中 app.use() 用于什么？", "options": ["定义路由", "注册中间件", "启动服务器", "连接数据库"], "answer": "注册中间件", "explanation": "app.use() 注册中间件，中间件按注册顺序执行，可处理请求和响应。" },
+  { "q": "Node.js 中读取文件用哪个模块？", "options": ["http", "path", "fs", "url"], "answer": "fs", "explanation": "fs (File System) 模块用于文件操作，提供同步和异步方法。" },
+  { "q": "package.json 中 dependencies 和 devDependencies 的区别？", "options": ["没有区别", "前者是生产依赖，后者是开发依赖", "前者是开发依赖，后者是生产依赖", "前者必须，后者可选"], "answer": "前者是生产依赖，后者是开发依赖", "explanation": "dependencies 是生产环境需要的包，devDependencies 是开发时需要的包。" },
+  { "q": "Node.js 是单线程还是多线程？", "options": ["单线程", "多线程", "取决于配置", "没有线程概念"], "answer": "单线程", "explanation": "Node.js 是单线程的，但通过事件循环和异步 I/O 实现高并发。" },
+  { "q": "如何创建 HTTP 服务器？", "options": ["http.createServer()", "new Server()", "http.server()", "createHTTP()"], "answer": "http.createServer()", "explanation": "http.createServer() 创建 HTTP 服务器，接收请求处理函数。" },
+  { "q": "process.env 用于什么？", "options": ["进程管理", "访问环境变量", "错误处理", "内存管理"], "answer": "访问环境变量", "explanation": "process.env 是对象，包含所有环境变量，常用于配置敏感信息。" },
+  { "q": "如何导出模块（CommonJS）？", "options": ["export default", "module.exports", "exports.default", "return"], "answer": "module.exports", "explanation": "CommonJS 用 module.exports 导出模块，可导出任何值。" },
+  { "q": "如何导入模块（CommonJS）？", "options": ["import", "require()", "include", "load"], "answer": "require()", "explanation": "CommonJS 用 require() 导入模块，返回导出的值。" },
+  { "q": "Node.js 中 Buffer 用于什么？", "options": ["缓存数据", "处理二进制数据", "缓冲区管理", "内存优化"], "answer": "处理二进制数据", "explanation": "Buffer 用于处理二进制数据，如文件读写、网络通信。" },
+  { "q": "如何处理异步操作？", "options": ["回调函数", "Promise", "async/await", "以上都可以"], "answer": "以上都可以", "explanation": "Node.js 支持回调、Promise、async/await 三种异步处理方式。" },
+  { "q": "Express 中如何获取 URL 参数？", "options": ["req.params", "req.query", "req.body", "取决于参数类型"], "answer": "取决于参数类型", "explanation": "req.params 获取路由参数，req.query 获取查询字符串，req.body 获取请求体。" },
+  { "q": "如何安装全局包？", "options": ["npm install", "npm install -g", "npm global install", "npm add --global"], "answer": "npm install -g", "explanation": "npm install -g 安装全局包，可在命令行任何地方使用。" },
+  { "q": "package-lock.json 的作用是？", "options": ["锁定依赖版本", "配置项目", "定义脚本", "存储缓存"], "answer": "锁定依赖版本", "explanation": "package-lock.json 记录依赖的精确版本，确保团队使用相同版本。" },
+  { "q": "如何运行 package.json 中的脚本？", "options": ["npm start script", "npm run <script>", "node <script>", "npm exec <script>"], "answer": "npm run <script>", "explanation": "npm run <script> 运行 package.json 中 scripts 定义的脚本。" },
+  { "q": "Node.js 中 __dirname 表示什么？", "options": ["项目根目录", "当前文件所在目录", "node_modules 目录", "临时目录"], "answer": "当前文件所在目录", "explanation": "__dirname 是全局变量，表示当前文件所在的目录路径。" },
+  { "q": "如何处理 POST 请求的 body？", "options": ["直接读取 req.body", "需要中间件解析", "req.data", "req.post"], "answer": "需要中间件解析", "explanation": "Express 需要 body-parser 或 express.json() 中间件解析请求体。" },
+  { "q": "Node.js 中事件循环的作用是？", "options": ["处理同步代码", "处理异步操作", "内存管理", "错误处理"], "answer": "处理异步操作", "explanation": "事件循环是 Node.js 的核心，处理异步操作和回调，实现非阻塞 I/O。" },
+  { "q": "如何优雅地关闭 Node.js 进程？", "options": ["process.exit()", "process.kill()", "监听 SIGTERM 信号", "直接关闭终端"], "answer": "监听 SIGTERM 信号", "explanation": "监听 SIGTERM 信号，完成清理工作后再关闭，实现优雅关闭。" }
+]

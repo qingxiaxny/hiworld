@@ -1,0 +1,22 @@
+[
+  { "q": "SQL 中用什么关键字查询数据？", "options": ["GET", "FETCH", "SELECT", "QUERY"], "answer": "SELECT", "explanation": "SELECT 是 SQL 的查询语句，用于从表中检索数据。" },
+  { "q": "WHERE 子句用于什么？", "options": ["排序", "过滤条件", "分组", "连接表"], "answer": "过滤条件", "explanation": "WHERE 用于指定查询条件，过滤满足条件的行。" },
+  { "q": "JOIN 用于什么操作？", "options": ["插入数据", "删除数据", "连接多个表", "更新数据"], "answer": "连接多个表", "explanation": "JOIN 用于连接多个表，根据条件合并数据。" },
+  { "q": "PRIMARY KEY 的作用是？", "options": ["外键约束", "唯一标识每条记录", "索引优化", "数据加密"], "answer": "唯一标识每条记录", "explanation": "PRIMARY KEY 是主键，唯一标识表中每条记录，不能为 NULL。" },
+  { "q": "ORDER BY 默认是什么排序？", "options": ["降序", "升序", "随机", "按插入顺序"], "answer": "升序", "explanation": "ORDER BY 默认升序（ASC），可用 DESC 指定降序。" },
+  { "q": "GROUP BY 的作用是？", "options": ["排序", "分组聚合", "过滤", "连接"], "answer": "分组聚合", "explanation": "GROUP BY 按指定列分组，常配合聚合函数如 COUNT、SUM 使用。" },
+  { "q": "HAVING 和 WHERE 的区别是？", "options": ["没有区别", "HAVING 用于分组后过滤", "WHERE 用于分组后过滤", "HAVING 更快"], "answer": "HAVING 用于分组后过滤", "explanation": "WHERE 在分组前过滤，HAVING 在分组后过滤。" },
+  { "q": "INNER JOIN 返回什么？", "options": ["所有记录", "两表匹配的记录", "左表所有记录", "右表所有记录"], "answer": "两表匹配的记录", "explanation": "INNER JOIN 返回两表都有匹配的记录。" },
+  { "q": "LEFT JOIN 返回什么？", "options": ["所有记录", "两表匹配的记录", "左表所有记录 + 匹配的右表记录", "右表所有记录"], "answer": "左表所有记录 + 匹配的右表记录", "explanation": "LEFT JOIN 返回左表所有记录，右表没有匹配的显示 NULL。" },
+  { "q": "DISTINCT 关键字的作用是？", "options": ["排序", "去重", "计数", "求和"], "answer": "去重", "explanation": "DISTINCT 去除查询结果中的重复行。" },
+  { "q": "COUNT(*) 和 COUNT(column) 的区别是？", "options": ["没有区别", "COUNT(*) 包含 NULL，COUNT(column) 不包含", "COUNT(column) 包含 NULL", "性能不同"], "answer": "COUNT(*) 包含 NULL，COUNT(column) 不包含", "explanation": "COUNT(*) 计数所有行，COUNT(column) 不计数 NULL 值。" },
+  { "q": "LIMIT 子句的作用是？", "options": ["限制列数", "限制返回行数", "限制条件", "限制排序"], "answer": "限制返回行数", "explanation": "LIMIT 限制查询返回的行数，常用于分页。" },
+  { "q": "UNION 和 UNION ALL 的区别是？", "options": ["没有区别", "UNION 去重，UNION ALL 不去重", "UNION ALL 去重", "性能相同"], "answer": "UNION 去重，UNION ALL 不去重", "explanation": "UNION 合并结果并去重，UNION ALL 合并结果不去重。" },
+  { "q": "子查询是什么？", "options": ["嵌套在其他查询中的查询", "子表查询", "索引查询", "视图查询"], "answer": "嵌套在其他查询中的查询", "explanation": "子查询是嵌套在 SELECT、WHERE 等子句中的查询。" },
+  { "q": "INDEX 索引的作用是？", "options": ["数据加密", "加速查询", "数据备份", "数据压缩"], "answer": "加速查询", "explanation": "索引加速查询，但会减慢插入和更新。" },
+  { "q": "FOREIGN KEY 的作用是？", "options": ["主键", "建立表之间的关联", "唯一约束", "非空约束"], "answer": "建立表之间的关联", "explanation": "FOREIGN KEY 外键建立表之间的关联，保证数据完整性。" },
+  { "q": "NULL 值如何判断？", "options": ["= NULL", "IS NULL", "== NULL", "EQUALS NULL"], "answer": "IS NULL", "explanation": "用 IS NULL 判断 NULL 值，不能用 = NULL。" },
+  { "q": "LIKE 操作符中 % 表示什么？", "options": ["单个字符", "任意多个字符", "数字", "字母"], "answer": "任意多个字符", "explanation": "% 匹配任意多个字符，_ 匹配单个字符。" },
+  { "q": "事务的 COMMIT 作用是？", "options": ["回滚", "提交事务", "开始事务", "结束连接"], "answer": "提交事务", "explanation": "COMMIT 提交事务，使所有更改永久保存。" },
+  { "q": "事务的 ROLLBACK 作用是？", "options": ["提交", "回滚事务", "开始事务", "结束连接"], "answer": "回滚事务", "explanation": "ROLLBACK 回滚事务，撤销所有未提交的更改。" }
+]

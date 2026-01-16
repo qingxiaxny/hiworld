@@ -1,0 +1,22 @@
+[
+  { "q": "Java 中 == 和 equals 的区别是？", "options": ["没有区别", "== 比较引用，equals 比较内容", "equals 比较引用", "== 更准确"], "answer": "== 比较引用，equals 比较内容", "explanation": "== 比较对象引用是否相同，equals 比较对象内容是否相等。" },
+  { "q": "Java 中 final 关键字的作用是？", "options": ["最终类/方法/变量不可修改", "结束程序", "异常处理", "循环控制"], "answer": "最终类/方法/变量不可修改", "explanation": "final 修饰的类不能被继承，方法不能被重写，变量不能被修改。" },
+  { "q": "ArrayList 和 LinkedList 的区别是？", "options": ["没有区别", "ArrayList 基于数组，LinkedList 基于链表", "LinkedList 基于数组", "ArrayList 线程安全"], "answer": "ArrayList 基于数组，LinkedList 基于链表", "explanation": "ArrayList 随机访问快，LinkedList 插入删除快。" },
+  { "q": "Java 中接口和抽象类的区别是？", "options": ["没有区别", "接口只能有抽象方法（Java 8 前）", "抽象类只能有抽象方法", "接口可以实例化"], "answer": "接口只能有抽象方法（Java 8 前）", "explanation": "Java 8 后接口可有默认方法，抽象类可有具体方法和属性。" },
+  { "q": "JVM 垃圾回收的作用是？", "options": ["清理代码", "自动回收不再使用的内存", "优化性能", "编译代码"], "answer": "自动回收不再使用的内存", "explanation": "GC 自动回收不可达对象的内存，减少内存泄漏。" },
+  { "q": "Java 中 static 关键字的作用是？", "options": ["静态变量/方法，属于类而非实例", "常量定义", "私有访问", "同步控制"], "answer": "静态变量/方法，属于类而非实例", "explanation": "static 修饰的成员属于类，所有实例共享，不需要创建对象即可访问。" },
+  { "q": "Java 中如何实现多线程？", "options": ["继承 Thread", "实现 Runnable", "使用线程池", "以上都可以"], "answer": "以上都可以", "explanation": "三种方式都支持，推荐使用 Runnable 或线程池。" },
+  { "q": "synchronized 关键字的作用是？", "options": ["异步执行", "同步锁，保证线程安全", "静态方法", "最终方法"], "answer": "同步锁，保证线程安全", "explanation": "synchronized 是互斥锁，保证同一时间只有一个线程执行代码块。" },
+  { "q": "Java 中 String 是可变的吗？", "options": ["可变", "不可变", "取决于操作", "可以配置"], "answer": "不可变", "explanation": "String 是不可变的，修改 String 会创建新对象。" },
+  { "q": "StringBuilder 和 StringBuffer 的区别是？", "options": ["没有区别", "StringBuffer 线程安全", "StringBuilder 线程安全", "性能相同"], "answer": "StringBuffer 线程安全", "explanation": "StringBuffer 是线程安全的，StringBuilder 不是，但 StringBuilder 性能更好。" },
+  { "q": "Java 中 HashMap 的底层实现是？", "options": ["数组", "链表", "数组 + 链表/红黑树", "红黑树"], "answer": "数组 + 链表/红黑树", "explanation": "HashMap 用数组存储，冲突时用链表，链表长度超过 8 转为红黑树。" },
+  { "q": "Java 中如何处理异常？", "options": ["try-catch-finally", "if-else", "switch", "while"], "answer": "try-catch-finally", "explanation": "try-catch-finally 用于异常处理，finally 块总是执行。" },
+  { "q": "Java 中 volatile 关键字的作用是？", "options": ["常量定义", "保证可见性", "同步锁", "静态变量"], "answer": "保证可见性", "explanation": "volatile 保证变量的可见性，禁止指令重排，但不保证原子性。" },
+  { "q": "Java 8 中 Stream API 用于？", "options": ["文件流", "集合的函数式操作", "网络流", "字节流"], "answer": "集合的函数式操作", "explanation": "Stream API 提供函数式编程方式操作集合，支持 map、filter、reduce 等。" },
+  { "q": "Java 中 Optional 类的作用是？", "options": ["可选参数", "避免空指针异常", "泛型约束", "类型转换"], "answer": "避免空指针异常", "explanation": "Optional 是容器类，包装可能为 null 的值，提供安全的操作方法。" },
+  { "q": "Java 中如何创建单例模式？", "options": ["私有构造函数 + 静态方法", "公有构造函数", "抽象类", "接口"], "answer": "私有构造函数 + 静态方法", "explanation": "单例模式私有构造函数防止实例化，静态方法返回唯一实例。" },
+  { "q": "Java 中 @Override 注解的作用是？", "options": ["重载方法", "标记重写父类方法", "定义新方法", "私有方法"], "answer": "标记重写父类方法", "explanation": "@Override 标记方法重写，编译器检查是否正确重写。" },
+  { "q": "Java 中泛型的作用是？", "options": ["提高性能", "类型安全和复用", "内存优化", "多线程"], "answer": "类型安全和复用", "explanation": "泛型提供编译时类型检查，避免强制转换，提高代码复用性。" },
+  { "q": "Java 中 this 和 super 的区别是？", "options": ["没有区别", "this 指当前对象，super 指父类", "super 指当前对象", "this 指父类"], "answer": "this 指当前对象，super 指父类", "explanation": "this 引用当前对象，super 引用父类，用于访问父类成员。" },
+  { "q": "Java 中如何实现接口？", "options": ["extends", "implements", "inherits", "uses"], "answer": "implements", "explanation": "implements 关键字实现接口，一个类可实现多个接口。" }
+]

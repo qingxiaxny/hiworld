@@ -1,0 +1,22 @@
+[
+  { "q": "查看当前目录下所有文件的命令是？", "options": ["dir", "ls -la", "show all", "list"], "answer": "ls -la", "explanation": "ls -la 显示所有文件（包括隐藏文件）的详细信息。" },
+  { "q": "chmod 755 表示什么权限？", "options": ["只读", "所有者可读写执行，其他人可读执行", "所有人可读写", "禁止访问"], "answer": "所有者可读写执行，其他人可读执行", "explanation": "755 表示所有者 rwx，组和其他人 rx。" },
+  { "q": "grep 命令的作用是？", "options": ["复制文件", "搜索文本", "移动文件", "删除文件"], "answer": "搜索文本", "explanation": "grep 搜索文件中匹配的文本行。" },
+  { "q": "如何查看进程？", "options": ["ps aux", "show process", "list proc", "proc -a"], "answer": "ps aux", "explanation": "ps aux 显示所有进程的详细信息。" },
+  { "q": "管道符 | 的作用是？", "options": ["或运算", "将前一个命令的输出作为后一个的输入", "并行执行", "条件判断"], "answer": "将前一个命令的输出作为后一个的输入", "explanation": "管道符连接两个命令，前一个的输出是后一个的输入。" },
+  { "q": "如何查看文件内容？", "options": ["cat", "less", "more", "以上都可以"], "answer": "以上都可以", "explanation": "cat 显示全部，less/more 分页显示。" },
+  { "q": "如何创建目录？", "options": ["create dir", "mkdir", "md", "new dir"], "answer": "mkdir", "explanation": "mkdir 创建目录，mkdir -p 创建多级目录。" },
+  { "q": "如何删除目录及其内容？", "options": ["rm dir", "rm -rf", "del dir", "rmdir -f"], "answer": "rm -rf", "explanation": "rm -rf 递归删除目录及其内容。" },
+  { "q": "如何查看磁盘使用情况？", "options": ["disk", "df -h", "du", "space"], "answer": "df -h", "explanation": "df -h 显示磁盘使用情况，-h 人类可读格式。" },
+  { "q": "如何查看内存使用情况？", "options": ["mem", "free -h", "memory", "ram"], "answer": "free -h", "explanation": "free -h 显示内存使用情况，-h 人类可读格式。" },
+  { "q": "如何后台运行命令？", "options": ["命令 &", "bg 命令", "run -b", "back 命令"], "answer": "命令 &", "explanation": "命令后加 & 在后台运行。" },
+  { "q": "如何查找文件？", "options": ["search", "find", "locate", "后两者都可以"], "answer": "后两者都可以", "explanation": "find 和 locate 都可查找文件，find 更强大。" },
+  { "q": "如何修改文件权限？", "options": ["perm", "chmod", "chown", "chgrp"], "answer": "chmod", "explanation": "chmod 修改文件权限。" },
+  { "q": "如何修改文件所有者？", "options": ["chmod", "chown", "chgrp", "owner"], "answer": "chown", "explanation": "chown 修改文件所有者，chgrp 修改所有组。" },
+  { "q": "如何查看网络配置？", "options": ["netconfig", "ifconfig 或 ip addr", "network", "net"], "answer": "ifconfig 或 ip addr", "explanation": "ifconfig 或 ip addr 显示网络配置。" },
+  { "q": "如何杀死进程？", "options": ["stop", "kill", "end", "terminate"], "answer": "kill", "explanation": "kill 杀死进程，kill -9 强制杀死。" },
+  { "q": "如何查看端口占用？", "options": ["port", "netstat -tlnp 或 ss -tlnp", "lsof", "后两者都可以"], "answer": "后两者都可以", "explanation": "netstat/ss 显示网络连接，lsof 显示打开的文件。" },
+  { "q": "如何压缩文件？", "options": ["zip", "tar -czvf", "compress", "以上都可以"], "answer": "以上都可以", "explanation": "zip、tar、gzip 都可压缩文件。" },
+  { "q": "如何查看系统日志？", "options": ["log", "tail -f /var/log/syslog", "syslog", "journalctl"], "answer": "tail -f /var/log/syslog", "explanation": "tail -f 实时查看日志，journalctl 查看系统日志。" },
+  { "q": "crontab 的作用是？", "options": ["系统监控", "定时任务", "日志管理", "进程管理"], "answer": "定时任务", "explanation": "crontab 用于定时执行任务。" }
+]

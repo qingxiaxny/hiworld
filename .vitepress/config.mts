@@ -37,6 +37,7 @@ export default defineConfig({
       { 
         component: 'MegaMenu'
       },
+      { text: '测验', link: '/quiz' },
       { text: '关于', link: '/about' }
     ],
 

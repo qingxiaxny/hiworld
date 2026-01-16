@@ -1,0 +1,22 @@
+[
+  { "q": "MongoDB 是什么类型的数据库？", "options": ["关系型", "文档型 NoSQL", "键值型", "图数据库"], "answer": "文档型 NoSQL", "explanation": "MongoDB 是文档型 NoSQL 数据库，存储 BSON 格式的文档。" },
+  { "q": "MongoDB 中的 _id 字段是什么？", "options": ["可选字段", "自动生成的唯一标识", "外键", "索引"], "answer": "自动生成的唯一标识", "explanation": "_id 是每个文档的唯一标识，自动生成 ObjectId。" },
+  { "q": "MongoDB 查询用什么方法？", "options": ["SELECT", "find()", "query()", "get()"], "answer": "find()", "explanation": "find() 方法查询文档，可传入查询条件。" },
+  { "q": "MongoDB 中如何创建索引？", "options": ["CREATE INDEX", "createIndex()", "addIndex()", "index()"], "answer": "createIndex()", "explanation": "createIndex() 创建索引，提高查询性能。" },
+  { "q": "MongoDB 的聚合管道用什么方法？", "options": ["group()", "aggregate()", "reduce()", "collect()"], "answer": "aggregate()", "explanation": "aggregate() 执行聚合管道，支持 $match、$group、$project 等操作。" },
+  { "q": "MongoDB 中文档的格式是？", "options": ["XML", "BSON/JSON", "CSV", "YAML"], "answer": "BSON/JSON", "explanation": "MongoDB 存储 BSON 格式，查询和输出为 JSON。" },
+  { "q": "MongoDB 中如何插入文档？", "options": ["INSERT", "insertOne()/insertMany()", "add()", "create()"], "answer": "insertOne()/insertMany()", "explanation": "insertOne() 插入单个文档，insertMany() 插入多个文档。" },
+  { "q": "MongoDB 中如何更新文档？", "options": ["UPDATE", "updateOne()/updateMany()", "modify()", "change()"], "answer": "updateOne()/updateMany()", "explanation": "updateOne() 更新单个文档，updateMany() 更新多个文档。" },
+  { "q": "MongoDB 中 $set 操作符的作用是？", "options": ["删除字段", "设置字段值", "增加字段", "重命名字段"], "answer": "设置字段值", "explanation": "$set 用于设置或更新字段值。" },
+  { "q": "MongoDB 中 $push 操作符的作用是？", "options": ["删除数组元素", "向数组添加元素", "更新数组", "查询数组"], "answer": "向数组添加元素", "explanation": "$push 向数组字段添加元素。" },
+  { "q": "MongoDB 中如何删除文档？", "options": ["DELETE", "deleteOne()/deleteMany()", "remove()", "drop()"], "answer": "deleteOne()/deleteMany()", "explanation": "deleteOne() 删除单个文档，deleteMany() 删除多个文档。" },
+  { "q": "MongoDB 中 $match 在聚合中的作用是？", "options": ["分组", "过滤文档", "排序", "投影"], "answer": "过滤文档", "explanation": "$match 过滤符合条件的文档，类似 WHERE。" },
+  { "q": "MongoDB 中 $group 在聚合中的作用是？", "options": ["过滤", "分组聚合", "排序", "限制"], "answer": "分组聚合", "explanation": "$group 按指定字段分组，支持聚合函数如 $sum、$avg。" },
+  { "q": "MongoDB 中如何实现分页？", "options": ["LIMIT OFFSET", "skip() + limit()", "page()", "paginate()"], "answer": "skip() + limit()", "explanation": "skip() 跳过指定数量文档，limit() 限制返回数量。" },
+  { "q": "MongoDB 中副本集的作用是？", "options": ["分片", "高可用和数据冗余", "负载均衡", "数据压缩"], "answer": "高可用和数据冗余", "explanation": "副本集提供数据冗余和自动故障转移。" },
+  { "q": "MongoDB 中分片的作用是？", "options": ["高可用", "水平扩展，分散数据", "数据备份", "索引优化"], "answer": "水平扩展，分散数据", "explanation": "分片将数据分散到多个服务器，实现水平扩展。" },
+  { "q": "MongoDB 中 $lookup 的作用是？", "options": ["查找文档", "关联查询（类似 JOIN）", "索引查找", "全文搜索"], "answer": "关联查询（类似 JOIN）", "explanation": "$lookup 用于关联查询，类似 SQL 的 JOIN。" },
+  { "q": "MongoDB 中如何排序？", "options": ["ORDER BY", "sort()", "orderBy()", "sortBy()"], "answer": "sort()", "explanation": "sort() 排序查询结果，1 升序，-1 降序。" },
+  { "q": "MongoDB 中 $project 的作用是？", "options": ["过滤", "投影，选择返回的字段", "分组", "排序"], "answer": "投影，选择返回的字段", "explanation": "$project 选择返回的字段，1 包含，0 排除。" },
+  { "q": "MongoDB 中如何创建唯一索引？", "options": ["UNIQUE INDEX", "createIndex({}, {unique: true})", "uniqueIndex()", "addUnique()"], "answer": "createIndex({}, {unique: true})", "explanation": "createIndex() 的 unique 选项创建唯一索引。" }
+]

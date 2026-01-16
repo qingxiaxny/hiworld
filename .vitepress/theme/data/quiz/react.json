@@ -1,0 +1,22 @@
+[
+  { "q": "React 中用什么 Hook 管理组件状态？", "options": ["useEffect", "useState", "useContext", "useRef"], "answer": "useState", "explanation": "useState 是 React 最基础的 Hook，用于在函数组件中添加状态。" },
+  { "q": "useEffect 的第二个参数是空数组时，何时执行？", "options": ["每次渲染", "仅首次渲染", "永不执行", "状态变化时"], "answer": "仅首次渲染", "explanation": "依赖数组为空时，useEffect 仅在组件挂载时执行一次，常用于初始化。" },
+  { "q": "React 组件名必须以什么开头？", "options": ["小写字母", "大写字母", "下划线", "数字"], "answer": "大写字母", "explanation": "React 组件名必须大写开头，小写开头会被当作 HTML 标签。" },
+  { "q": "JSX 中如何渲染变量？", "options": ["{{ var }}", "{ var }", "${ var }", "<%= var %>"], "answer": "{ var }", "explanation": "JSX 中用单层花括号 {} 渲染 JavaScript 表达式。" },
+  { "q": "React 中 key 属性的作用是？", "options": ["样式设置", "帮助 React 识别元素变化", "事件绑定", "数据传递"], "answer": "帮助 React 识别元素变化", "explanation": "key 帮助 React 识别列表中哪些元素改变，提高性能和避免 bug。" },
+  { "q": "useRef 的主要用途是？", "options": ["状态管理", "获取 DOM 引用或保存可变值", "副作用处理", "上下文传递"], "answer": "获取 DOM 引用或保存可变值", "explanation": "useRef 返回可变的 ref 对象，可访问 DOM 或保存不触发重渲染的值。" },
+  { "q": "useMemo 的作用是？", "options": ["缓存计算结果", "缓存函数", "管理状态", "处理副作用"], "answer": "缓存计算结果", "explanation": "useMemo 缓存计算结果，依赖不变时返回缓存值，避免重复计算。" },
+  { "q": "useCallback 的作用是？", "options": ["缓存计算结果", "缓存函数引用", "管理状态", "处理副作用"], "answer": "缓存函数引用", "explanation": "useCallback 缓存函数引用，避免子组件不必要的重渲染。" },
+  { "q": "React 中如何进行条件渲染？", "options": ["v-if", "三元表达式或 &&", "if 指令", "#if"], "answer": "三元表达式或 &&", "explanation": "React 用三元表达式 condition ? a : b 或 && 操作符进行条件渲染。" },
+  { "q": "React 中如何传递 props？", "options": ["<Comp :prop=\"value\">", "<Comp prop={value}>", "<Comp prop=value>", "<Comp [prop]=\"value\">"], "answer": "<Comp prop={value}>", "explanation": "React 中用 JSX 属性语法传递 props，值用 {} 包裹。" },
+  { "q": "useContext 的作用是？", "options": ["创建上下文", "消费上下文", "更新上下文", "删除上下文"], "answer": "消费上下文", "explanation": "useContext 用于消费 Context 值，需要配合 React.createContext 使用。" },
+  { "q": "React.memo 的作用是？", "options": ["缓存计算", "组件性能优化，避免不必要的重渲染", "状态管理", "错误边界"], "answer": "组件性能优化，避免不必要的重渲染", "explanation": "React.memo 包裹组件，props 不变时跳过重渲染，提升性能。" },
+  { "q": "React 中如何处理表单输入？", "options": ["v-model", "受控组件或非受控组件", "双向绑定", "form 指令"], "answer": "受控组件或非受控组件", "explanation": "受控组件用 state 管理值，非受控组件用 ref 获取值。" },
+  { "q": "useReducer 适合什么场景？", "options": ["简单状态", "复杂状态逻辑", "异步操作", "DOM 操作"], "answer": "复杂状态逻辑", "explanation": "useReducer 用于复杂状态逻辑，多个相关状态或复杂更新规则。" },
+  { "q": "React 中如何实现路由？", "options": ["内置路由", "react-router-dom", "vue-router", "@angular/router"], "answer": "react-router-dom", "explanation": "React 使用 react-router-dom 库实现路由，提供 BrowserRouter、Route 等组件。" },
+  { "q": "React 18 中 Concurrent Mode 的作用是？", "options": ["同步渲染", "可中断渲染，提升用户体验", "服务端渲染", "静态生成"], "answer": "可中断渲染，提升用户体验", "explanation": "Concurrent Mode 使渲染可中断，优先级高的更新可打断低优先级更新。" },
+  { "q": "React 中如何处理错误？", "options": ["try-catch", "Error Boundary 组件", "onError 事件", "错误中间件"], "answer": "Error Boundary 组件", "explanation": "Error Boundary 是类组件，捕获子组件错误，防止整个应用崩溃。" },
+  { "q": "React 中 Fragment 的作用是？", "options": ["创建片段", "包裹多个元素而不添加额外 DOM", "代码分割", "懒加载"], "answer": "包裹多个元素而不添加额外 DOM", "explanation": "Fragment (<> 或 <React.Fragment>) 包裹多个元素，不产生额外 DOM 节点。" },
+  { "q": "React 中如何实现代码分割？", "options": ["import()", "React.lazy()", "两者配合使用", "不支持"], "answer": "两者配合使用", "explanation": "React.lazy() 配合 import() 实现代码分割，Suspense 处理加载状态。" },
+  { "q": "React 中 StrictMode 的作用是？", "options": ["生产优化", "开发时检测潜在问题", "类型检查", "性能监控"], "answer": "开发时检测潜在问题", "explanation": "StrictMode 在开发环境检测不安全的生命周期、副作用等问题。" }
+]

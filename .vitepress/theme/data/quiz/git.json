@@ -1,0 +1,22 @@
+[
+  { "q": "git add 命令的作用是？", "options": ["提交代码", "添加到暂存区", "推送到远程", "创建分支"], "answer": "添加到暂存区", "explanation": "git add 将文件添加到暂存区，准备提交。" },
+  { "q": "如何撤销最近一次 commit？", "options": ["git undo", "git reset HEAD~1", "git revert HEAD", "git cancel"], "answer": "git reset HEAD~1", "explanation": "git reset HEAD~1 撤销最近一次 commit，保留修改。" },
+  { "q": "git merge 和 git rebase 的区别是？", "options": ["没有区别", "merge 保留历史，rebase 线性化", "rebase 保留历史", "merge 更快"], "answer": "merge 保留历史，rebase 线性化", "explanation": "merge 创建合并 commit，rebase 重新应用 commit，历史更线性。" },
+  { "q": "如何查看提交历史？", "options": ["git history", "git log", "git show", "git list"], "answer": "git log", "explanation": "git log 显示提交历史，git show 显示特定 commit。" },
+  { "q": ".gitignore 文件的作用是？", "options": ["忽略错误", "忽略指定文件不被追踪", "忽略警告", "忽略冲突"], "answer": "忽略指定文件不被追踪", "explanation": ".gitignore 指定不被 git 追踪的文件。" },
+  { "q": "git clone 的作用是？", "options": ["创建分支", "克隆远程仓库", "提交代码", "合并分支"], "answer": "克隆远程仓库", "explanation": "git clone 克隆远程仓库到本地。" },
+  { "q": "git pull 相当于什么操作？", "options": ["git push", "git fetch + git merge", "git clone", "git checkout"], "answer": "git fetch + git merge", "explanation": "git pull 先 fetch 再 merge，相当于更新本地代码。" },
+  { "q": "如何创建新分支？", "options": ["git new branch", "git branch <name>", "git create branch", "git add branch"], "answer": "git branch <name>", "explanation": "git branch <name> 创建新分支。" },
+  { "q": "如何切换分支？", "options": ["git switch <branch>", "git checkout <branch>", "两者都可以", "git change <branch>"], "answer": "两者都可以", "explanation": "git checkout 和 git switch 都可切换分支。" },
+  { "q": "git stash 的作用是？", "options": ["删除修改", "暂存当前修改", "提交修改", "推送修改"], "answer": "暂存当前修改", "explanation": "git stash 暂存当前修改，可稍后恢复。" },
+  { "q": "如何查看当前状态？", "options": ["git info", "git status", "git state", "git check"], "answer": "git status", "explanation": "git status 显示当前工作区状态。" },
+  { "q": "git diff 的作用是？", "options": ["合并差异", "查看文件差异", "删除差异", "忽略差异"], "answer": "查看文件差异", "explanation": "git diff 显示工作区和暂存区的差异。" },
+  { "q": "如何删除分支？", "options": ["git delete branch", "git branch -d <name>", "git remove branch", "git drop branch"], "answer": "git branch -d <name>", "explanation": "git branch -d 删除分支，-D 强制删除。" },
+  { "q": "git cherry-pick 的作用是？", "options": ["选择分支", "选择特定 commit 应用到当前分支", "选择文件", "选择远程"], "answer": "选择特定 commit 应用到当前分支", "explanation": "git cherry-pick 选择特定 commit 应用到当前分支。" },
+  { "q": "如何查看远程仓库？", "options": ["git remote", "git remote -v", "两者都可以", "git origin"], "answer": "两者都可以", "explanation": "git remote 显示远程仓库，-v 显示详细信息。" },
+  { "q": "git fetch 和 git pull 的区别是？", "options": ["没有区别", "fetch 只下载不合并，pull 下载并合并", "pull 只下载", "fetch 会合并"], "answer": "fetch 只下载不合并，pull 下载并合并", "explanation": "git fetch 只下载远程更新，git pull 下载并合并。" },
+  { "q": "如何修改最近一次 commit 信息？", "options": ["git edit", "git commit --amend", "git modify", "git change"], "answer": "git commit --amend", "explanation": "git commit --amend 修改最近一次 commit。" },
+  { "q": "git tag 的作用是？", "options": ["标记分支", "创建版本标签", "标记文件", "标记用户"], "answer": "创建版本标签", "explanation": "git tag 创建版本标签，用于标记发布版本。" },
+  { "q": "如何解决合并冲突？", "options": ["自动解决", "手动编辑冲突文件后 add 和 commit", "删除文件", "忽略冲突"], "answer": "手动编辑冲突文件后 add 和 commit", "explanation": "合并冲突需手动编辑，然后 add 和 commit。" },
+  { "q": "git reset --hard 的作用是？", "options": ["软重置", "硬重置，丢弃所有修改", "混合重置", "不重置"], "answer": "硬重置，丢弃所有修改", "explanation": "git reset --hard 丢弃所有修改，恢复到指定 commit。" }
+]

@@ -1,0 +1,22 @@
+[
+  { "q": "Vue 3 中用什么函数创建响应式对象？", "options": ["ref()", "reactive()", "两者都可以", "useState()"], "answer": "两者都可以", "explanation": "ref() 和 reactive() 都可创建响应式对象，ref 用于基本类型和对象，reactive 只用于对象。" },
+  { "q": "v-model 是哪两个指令的语法糖？", "options": ["v-bind 和 v-on", "v-if 和 v-show", "v-for 和 v-bind", "v-text 和 v-html"], "answer": "v-bind 和 v-on", "explanation": "v-model 是 v-bind:value 和 @input 的语法糖，实现双向数据绑定。" },
+  { "q": "computed 和 methods 的主要区别是？", "options": ["没有区别", "computed 有缓存", "methods 有缓存", "computed 不能传参"], "answer": "computed 有缓存", "explanation": "computed 基于依赖缓存，依赖不变不重新计算。methods 每次调用都执行。" },
+  { "q": "Vue 组件的生命周期钩子 mounted 在什么时候执行？", "options": ["组件创建前", "组件挂载后", "组件更新时", "组件销毁时"], "answer": "组件挂载后", "explanation": "mounted 在组件挂载到 DOM 后执行，可进行 DOM 操作和数据初始化。" },
+  { "q": "Pinia 是用来做什么的？", "options": ["路由管理", "状态管理", "UI 组件库", "构建工具"], "answer": "状态管理", "explanation": "Pinia 是 Vue 3 的状态管理库，是 Vuex 的现代替代品，更简洁易用。" },
+  { "q": "ref 和 reactive 的区别是？", "options": ["没有区别", "ref 用于基本类型，reactive 用于对象", "reactive 用于基本类型", "ref 不能用于对象"], "answer": "ref 用于基本类型，reactive 用于对象", "explanation": "ref 可用于任何类型，reactive 只用于对象。ref 需要 .value，reactive 不需要。" },
+  { "q": "如何获取 ref 的值？", "options": ["ref.value", "ref()", "ref.get()", "直接使用 ref"], "answer": "ref.value", "explanation": "ref 返回 RefImpl 对象，需要通过 .value 属性访问实际值。在模板中自动解包。" },
+  { "q": "v-if 和 v-show 的区别是？", "options": ["没有区别", "v-if 条件渲染，v-show 切换 display", "v-show 条件渲染", "v-if 性能更好"], "answer": "v-if 条件渲染，v-show 切换 display", "explanation": "v-if 条件为假时不渲染 DOM，v-show 始终渲染但用 display:none 隐藏。" },
+  { "q": "watch 和 watchEffect 的区别是？", "options": ["没有区别", "watchEffect 自动追踪依赖", "watch 自动追踪依赖", "watchEffect 需要指定依赖"], "answer": "watchEffect 自动追踪依赖", "explanation": "watchEffect 自动追踪依赖，watch 需要明确指定依赖。watchEffect 更简洁。" },
+  { "q": "Vue 3 中如何定义 props？", "options": ["props: []", "defineProps()", "this.props", "setup(props)"], "answer": "defineProps()", "explanation": "在 <script setup> 中用 defineProps() 定义 props，自动编译为组件选项。" },
+  { "q": "Vue 3 中如何触发自定义事件？", "options": ["this.$emit()", "emit()", "defineEmits() 后使用 emit", "dispatch()"], "answer": "defineEmits() 后使用 emit", "explanation": "在 <script setup> 中用 defineEmits() 定义事件，返回 emit 函数用于触发事件。" },
+  { "q": "provide/inject 用于什么？", "options": ["状态管理", "跨层级组件通信", "路由传参", "表单验证"], "answer": "跨层级组件通信", "explanation": "provide/inject 用于祖先组件向深层后代组件传递数据，避免逐层传递 props。" },
+  { "q": "Vue Router 中 <router-view> 的作用是？", "options": ["定义路由", "显示路由组件", "导航链接", "路由守卫"], "answer": "显示路由组件", "explanation": "<router-view> 是路由出口，显示当前路由对应的组件。<router-link> 是导航链接。" },
+  { "q": "如何在 Vue 3 中使用 Composition API？", "options": ["setup() 函数", "<script setup>", "两者都可以", "options API"], "answer": "两者都可以", "explanation": "可用 setup() 函数或 <script setup> 语法，后者更简洁，是推荐方式。" },
+  { "q": "nextTick 的作用是？", "options": ["延迟执行", "等待 DOM 更新后执行", "异步请求", "定时器"], "answer": "等待 DOM 更新后执行", "explanation": "nextTick 返回 Promise，在 DOM 更新后执行回调，用于获取更新后的 DOM。" },
+  { "q": "Vue 3 中 Teleport 组件的作用是？", "options": ["路由跳转", "将内容渲染到指定 DOM 位置", "状态传递", "动画效果"], "answer": "将内容渲染到指定 DOM 位置", "explanation": "Teleport 将组件内容渲染到 DOM 树的其他位置，常用于模态框、弹窗。" },
+  { "q": "如何在 Vue 中使用插槽？", "options": ["<slot>", "<template>", "v-slot", "以上都是"], "answer": "以上都是", "explanation": "<slot> 定义插槽，<template v-slot> 或 #name 传递内容，都是插槽的使用方式。" },
+  { "q": "Vue 3 中 Suspense 组件用于？", "options": ["错误处理", "异步组件加载", "动画", "状态管理"], "answer": "异步组件加载", "explanation": "Suspense 处理异步组件加载，显示加载中状态，加载完成后显示组件。" },
+  { "q": "如何定义全局组件？", "options": ["Vue.component()", "app.component()", "global.component()", "defineComponent()"], "answer": "app.component()", "explanation": "在 main.js 中用 app.component('name', component) 注册全局组件。" },
+  { "q": "Vue 3 相比 Vue 2 的主要改进是？", "options": ["Composition API", "更好的 TypeScript 支持", "更小的包体积", "以上都是"], "answer": "以上都是", "explanation": "Vue 3 引入 Composition API、更好的 TypeScript 支持、更小的包体积等多项改进。" }
+]

@@ -1,0 +1,22 @@
+[
+  { "q": "Kubernetes 中最小的部署单元是？", "options": ["Container", "Pod", "Node", "Cluster"], "answer": "Pod", "explanation": "Pod 是 Kubernetes 最小的部署单元，可包含一个或多个容器。" },
+  { "q": "Service 的作用是？", "options": ["存储数据", "为 Pod 提供稳定的网络访问", "日志收集", "监控"], "answer": "为 Pod 提供稳定的网络访问", "explanation": "Service 提供稳定的 IP 和 DNS，负载均衡 Pod 流量。" },
+  { "q": "Deployment 和 StatefulSet 的区别是？", "options": ["没有区别", "StatefulSet 用于有状态应用", "Deployment 用于有状态应用", "StatefulSet 更快"], "answer": "StatefulSet 用于有状态应用", "explanation": "Deployment 用于无状态应用，StatefulSet 用于有状态应用。" },
+  { "q": "kubectl get pods 命令的作用是？", "options": ["创建 Pod", "查看 Pod 列表", "删除 Pod", "更新 Pod"], "answer": "查看 Pod 列表", "explanation": "kubectl get pods 显示 Pod 列表。" },
+  { "q": "ConfigMap 用于什么？", "options": ["存储密码", "存储配置信息", "存储日志", "存储镜像"], "answer": "存储配置信息", "explanation": "ConfigMap 存储非敏感的配置信息。" },
+  { "q": "Secret 和 ConfigMap 的区别是？", "options": ["没有区别", "Secret 用于敏感数据，Base64 编码", "ConfigMap 用于敏感数据", "Secret 更快"], "answer": "Secret 用于敏感数据，Base64 编码", "explanation": "Secret 存储敏感数据如密码，Base64 编码。" },
+  { "q": "Namespace 的作用是？", "options": ["网络隔离", "资源隔离和组织", "存储隔离", "计算隔离"], "answer": "资源隔离和组织", "explanation": "Namespace 隔离资源，组织不同的应用。" },
+  { "q": "如何扩缩容 Deployment？", "options": ["kubectl scale", "kubectl resize", "kubectl expand", "kubectl grow"], "answer": "kubectl scale", "explanation": "kubectl scale deployment name --replicas=3 扩缩容。" },
+  { "q": "Ingress 的作用是？", "options": ["内部通信", "HTTP/HTTPS 路由入口", "存储", "监控"], "answer": "HTTP/HTTPS 路由入口", "explanation": "Ingress 提供 HTTP/HTTPS 路由和负载均衡。" },
+  { "q": "PersistentVolume 的作用是？", "options": ["临时存储", "持久化存储", "网络存储", "缓存"], "answer": "持久化存储", "explanation": "PersistentVolume 提供持久化存储。" },
+  { "q": "如何查看 Pod 日志？", "options": ["kubectl log", "kubectl logs", "kubectl output", "kubectl print"], "answer": "kubectl logs", "explanation": "kubectl logs pod-name 查看 Pod 日志。" },
+  { "q": "如何进入 Pod 容器？", "options": ["kubectl enter", "kubectl exec -it", "kubectl attach", "kubectl connect"], "answer": "kubectl exec -it", "explanation": "kubectl exec -it pod-name -- /bin/bash 进入容器。" },
+  { "q": "DaemonSet 的作用是？", "options": ["定时任务", "每个节点运行一个 Pod", "批处理任务", "有状态应用"], "answer": "每个节点运行一个 Pod", "explanation": "DaemonSet 在每个节点运行一个 Pod，如日志收集。" },
+  { "q": "Job 和 CronJob 的区别是？", "options": ["没有区别", "CronJob 是定时执行的 Job", "Job 是定时执行", "CronJob 是一次性"], "answer": "CronJob 是定时执行的 Job", "explanation": "Job 是一次性任务，CronJob 是定时任务。" },
+  { "q": "如何应用 YAML 配置？", "options": ["kubectl create", "kubectl apply -f", "kubectl run", "kubectl start"], "answer": "kubectl apply -f", "explanation": "kubectl apply -f file.yaml 应用配置。" },
+  { "q": "如何删除资源？", "options": ["kubectl remove", "kubectl delete", "kubectl destroy", "kubectl drop"], "answer": "kubectl delete", "explanation": "kubectl delete pod pod-name 删除资源。" },
+  { "q": "Liveness Probe 的作用是？", "options": ["就绪检查", "存活检查", "启动检查", "健康检查"], "answer": "存活检查", "explanation": "Liveness Probe 检查 Pod 是否存活，失败则重启。" },
+  { "q": "Readiness Probe 的作用是？", "options": ["存活检查", "就绪检查，决定是否接收流量", "启动检查", "健康检查"], "answer": "就绪检查，决定是否接收流量", "explanation": "Readiness Probe 检查 Pod 是否就绪，决定是否接收流量。" },
+  { "q": "如何查看集群节点？", "options": ["kubectl get clusters", "kubectl get nodes", "kubectl list nodes", "kubectl show nodes"], "answer": "kubectl get nodes", "explanation": "kubectl get nodes 显示集群节点。" },
+  { "q": "HPA 的作用是？", "options": ["手动扩缩容", "根据指标自动扩缩容", "负载均衡", "服务发现"], "answer": "根据指标自动扩缩容", "explanation": "HPA 根据 CPU、内存等指标自动扩缩容。" }
+]

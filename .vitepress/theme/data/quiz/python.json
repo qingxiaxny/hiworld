@@ -1,0 +1,22 @@
+[
+  { "q": "Python 中如何定义一个函数？", "options": ["function", "def", "fn", "func"], "answer": "def", "explanation": "Python 用 def 关键字定义函数，后跟函数名和参数列表。" },
+  { "q": "列表推导式 [x*2 for x in range(3)] 的结果是？", "options": ["[0, 1, 2]", "[2, 4, 6]", "[0, 2, 4]", "[1, 2, 3]"], "answer": "[0, 2, 4]", "explanation": "range(3) 生成 0, 1, 2，每个乘以 2 得到 [0, 2, 4]。" },
+  { "q": "Python 中 None 相当于其他语言的？", "options": ["0", "false", "null", "undefined"], "answer": "null", "explanation": "None 是 Python 的空值，相当于 JavaScript 的 null 或 Java 的 null。" },
+  { "q": "哪个方法用于向列表末尾添加元素？", "options": ["add()", "push()", "append()", "insert()"], "answer": "append()", "explanation": "append() 向列表末尾添加单个元素，extend() 添加多个元素。" },
+  { "q": "Python 的缩进有什么作用？", "options": ["美观", "定义代码块", "注释", "没有作用"], "answer": "定义代码块", "explanation": "Python 用缩进定义代码块，不需要花括号，缩进是语法的一部分。" },
+  { "q": "如何创建虚拟环境？", "options": ["python venv", "python -m venv", "pip venv", "virtualenv only"], "answer": "python -m venv", "explanation": "python -m venv <env_name> 创建虚拟环境，隔离项目依赖。" },
+  { "q": "Python 中 self 参数的作用是？", "options": ["全局变量", "指向实例本身", "类变量", "静态方法"], "answer": "指向实例本身", "explanation": "self 是实例方法的第一个参数，指向调用该方法的实例对象。" },
+  { "q": "如何捕获异常？", "options": ["catch", "except", "handle", "error"], "answer": "except", "explanation": "Python 用 try-except 捕获异常，except 块处理异常。" },
+  { "q": "Python 中字典的键必须是？", "options": ["字符串", "数字", "可哈希的", "任意类型"], "answer": "可哈希的", "explanation": "字典键必须是可哈希的（不可变），如字符串、数字、元组。" },
+  { "q": "如何读取文件内容？", "options": ["file.read()", "open().read()", "with open() as f: f.read()", "以上都可以"], "answer": "以上都可以", "explanation": "三种方式都可读取文件，with 语句最安全，自动关闭文件。" },
+  { "q": "Python 中 *args 的作用是？", "options": ["关键字参数", "可变位置参数", "默认参数", "必填参数"], "answer": "可变位置参数", "explanation": "*args 接收可变数量的位置参数，作为元组传入函数。" },
+  { "q": "Python 中 **kwargs 的作用是？", "options": ["可变位置参数", "可变关键字参数", "默认参数", "必填参数"], "answer": "可变关键字参数", "explanation": "**kwargs 接收可变数量的关键字参数，作为字典传入函数。" },
+  { "q": "如何安装第三方包？", "options": ["python install", "pip install", "py install", "package install"], "answer": "pip install", "explanation": "pip 是 Python 的包管理器，pip install <package> 安装包。" },
+  { "q": "Python 中 lambda 表达式用于？", "options": ["定义类", "定义匿名函数", "循环", "条件判断"], "answer": "定义匿名函数", "explanation": "lambda 定义匿名函数，语法为 lambda args: expression。" },
+  { "q": "如何判断类型？", "options": ["typeof()", "type()", "instanceof", "is_type()"], "answer": "type()", "explanation": "type() 返回对象的类型，isinstance() 检查对象是否是某类型的实例。" },
+  { "q": "Python 中装饰器的作用是？", "options": ["美化代码", "在不修改函数的情况下扩展功能", "类型检查", "错误处理"], "answer": "在不修改函数的情况下扩展功能", "explanation": "装饰器是函数，用 @decorator 语法包装函数，扩展其功能。" },
+  { "q": "如何创建生成器？", "options": ["return", "yield", "generate", "iter"], "answer": "yield", "explanation": "yield 关键字创建生成器，函数返回迭代器，延迟计算。" },
+  { "q": "Python 中 is 和 == 的区别是？", "options": ["没有区别", "is 比较身份，== 比较值", "== 比较身份", "is 更严格"], "answer": "is 比较身份，== 比较值", "explanation": "is 比较对象身份（内存地址），== 比较值是否相等。" },
+  { "q": "如何格式化字符串（Python 3.6+）？", "options": ["% 格式化", ".format()", "f-string", "以上都可以"], "answer": "以上都可以", "explanation": "三种方式都支持，f-string 最简洁，推荐使用。" },
+  { "q": "Python 中 __init__ 方法的作用是？", "options": ["析构函数", "构造函数/初始化方法", "静态方法", "类方法"], "answer": "构造函数/初始化方法", "explanation": "__init__ 是构造函数，创建实例时自动调用，初始化实例属性。" }
+]

@@ -1,0 +1,22 @@
+[
+  { "q": "Redis 支持哪些数据类型？", "options": ["只有字符串", "String/List/Set/Hash/ZSet", "只有键值对", "只有 JSON"], "answer": "String/List/Set/Hash/ZSet", "explanation": "Redis 支持 5 种基本数据类型，还有 Stream、HyperLogLog 等。" },
+  { "q": "Redis 为什么快？", "options": ["多线程", "基于内存 + 单线程", "分布式", "压缩算法"], "answer": "基于内存 + 单线程", "explanation": "Redis 数据存在内存中，单线程避免锁竞争，所以很快。" },
+  { "q": "Redis 持久化方式有哪些？", "options": ["只有 RDB", "RDB 和 AOF", "只有 AOF", "不支持持久化"], "answer": "RDB 和 AOF", "explanation": "RDB 是快照，AOF 是日志，可同时使用。" },
+  { "q": "Redis 中 EXPIRE 命令的作用是？", "options": ["删除键", "设置过期时间", "重命名", "查询键"], "answer": "设置过期时间", "explanation": "EXPIRE 设置键的过期时间，单位秒。" },
+  { "q": "Redis 集群如何实现数据分片？", "options": ["随机分配", "哈希槽", "轮询", "主从复制"], "answer": "哈希槽", "explanation": "Redis 集群用 16384 个哈希槽分片数据。" },
+  { "q": "RDB 持久化的特点是？", "options": ["实时持久化", "定时快照", "追加日志", "同步复制"], "answer": "定时快照", "explanation": "RDB 定时生成快照，恢复快但可能丢失数据。" },
+  { "q": "AOF 持久化的特点是？", "options": ["定时快照", "追加写命令日志", "二进制存储", "压缩存储"], "answer": "追加写命令日志", "explanation": "AOF 记录所有写命令，数据安全但文件大。" },
+  { "q": "Redis 中 SET 命令的 NX 选项表示？", "options": ["设置过期时间", "键不存在时才设置", "键存在时才设置", "覆盖设置"], "answer": "键不存在时才设置", "explanation": "SET NX 只在键不存在时设置，常用于分布式锁。" },
+  { "q": "Redis 中如何实现分布式锁？", "options": ["LOCK 命令", "SET NX + 过期时间", "MUTEX 命令", "SYNC 命令"], "answer": "SET NX + 过期时间", "explanation": "SET NX 原子性设置，过期时间防止死锁。" },
+  { "q": "Redis 中 ZSet 的特点是？", "options": ["无序集合", "有序集合，按分数排序", "哈希表", "链表"], "answer": "有序集合，按分数排序", "explanation": "ZSet 是有序集合，每个元素有分数，按分数排序。" },
+  { "q": "Redis 中 LPUSH 和 RPUSH 的区别是？", "options": ["没有区别", "LPUSH 左侧插入，RPUSH 右侧插入", "RPUSH 左侧插入", "性能不同"], "answer": "LPUSH 左侧插入，RPUSH 右侧插入", "explanation": "LPUSH 在列表左端插入，RPUSH 在右端插入。" },
+  { "q": "Redis 中如何查看所有键？", "options": ["SHOW KEYS", "KEYS *", "LIST KEYS", "GET ALL"], "answer": "KEYS *", "explanation": "KEYS * 查看所有键，但会阻塞服务器，生产环境用 SCAN。" },
+  { "q": "Redis 中 TTL 命令返回什么？", "options": ["键的值", "键的剩余过期时间", "键的类型", "键的大小"], "answer": "键的剩余过期时间", "explanation": "TTL 返回键的剩余过期时间，单位秒。" },
+  { "q": "Redis 中如何删除键？", "options": ["REMOVE", "DELETE", "DEL", "DROP"], "answer": "DEL", "explanation": "DEL 删除键，可删除多个键。" },
+  { "q": "Redis 中 INCR 命令的作用是？", "options": ["字符串拼接", "数值加 1", "数值减 1", "设置值"], "answer": "数值加 1", "explanation": "INCR 将键的值加 1，DECR 减 1。" },
+  { "q": "Redis 中 Hash 类型适合存储什么？", "options": ["简单字符串", "对象属性", "有序列表", "集合"], "answer": "对象属性", "explanation": "Hash 适合存储对象，每个字段是一个键值对。" },
+  { "q": "Redis 中如何实现消息队列？", "options": ["String", "List 的 LPUSH/RPOP", "Set", "Hash"], "answer": "List 的 LPUSH/RPOP", "explanation": "List 的 LPUSH/RPOP 可实现简单消息队列。" },
+  { "q": "Redis 中 SCAN 命令相比 KEYS 的优势是？", "options": ["更快", "不阻塞服务器", "更准确", "支持正则"], "answer": "不阻塞服务器", "explanation": "SCAN 渐进式遍历，不阻塞服务器。" },
+  { "q": "Redis 中如何设置密码？", "options": ["SET PASSWORD", "requirepass 配置", "AUTH SET", "PASSWORD"], "answer": "requirepass 配置", "explanation": "在 redis.conf 中设置 requirepass，用 AUTH 认证。" },
+  { "q": "Redis 中 Pipeline 的作用是？", "options": ["数据管道", "批量执行命令减少网络开销", "数据压缩", "数据加密"], "answer": "批量执行命令减少网络开销", "explanation": "Pipeline 批量发送命令，减少网络往返。" }
+]

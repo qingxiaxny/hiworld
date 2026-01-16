@@ -1,0 +1,22 @@
+[
+  { "q": "MySQL 中 InnoDB 和 MyISAM 的区别是？", "options": ["没有区别", "InnoDB 支持事务，MyISAM 不支持", "MyISAM 支持事务", "InnoDB 更快"], "answer": "InnoDB 支持事务，MyISAM 不支持", "explanation": "InnoDB 支持事务和外键，MyISAM 不支持，InnoDB 是现代默认引擎。" },
+  { "q": "什么是索引？", "options": ["数据备份", "加速查询的数据结构", "数据加密", "数据压缩"], "answer": "加速查询的数据结构", "explanation": "索引是数据结构，加速查询，但会占用存储空间。" },
+  { "q": "事务的 ACID 特性是什么？", "options": ["速度快", "原子性/一致性/隔离性/持久性", "安全性", "可扩展性"], "answer": "原子性/一致性/隔离性/持久性", "explanation": "ACID 是事务的四个特性，保证数据的可靠性。" },
+  { "q": "如何避免 SQL 注入？", "options": ["使用拼接", "使用参数化查询", "不使用 WHERE", "使用明文密码"], "answer": "使用参数化查询", "explanation": "参数化查询（预编译语句）可防止 SQL 注入攻击。" },
+  { "q": "EXPLAIN 命令的作用是？", "options": ["执行查询", "分析查询执行计划", "创建表", "删除数据"], "answer": "分析查询执行计划", "explanation": "EXPLAIN 显示查询的执行计划，帮助优化查询。" },
+  { "q": "MySQL 中 B+ 树索引的特点是？", "options": ["数据存在所有节点", "数据只存在叶子节点", "不支持范围查询", "单向链表"], "answer": "数据只存在叶子节点", "explanation": "B+ 树数据只存在叶子节点，支持范围查询和排序。" },
+  { "q": "什么是聚簇索引？", "options": ["普通索引", "索引和数据存储在一起", "唯一索引", "全文索引"], "answer": "索引和数据存储在一起", "explanation": "聚簇索引将索引和数据存储在一起，InnoDB 的主键是聚簇索引。" },
+  { "q": "MySQL 中如何查看表结构？", "options": ["SHOW TABLE", "DESC table_name", "VIEW table_name", "INFO table_name"], "answer": "DESC table_name", "explanation": "DESC 或 DESCRIBE 显示表结构，包括列名、类型、约束等。" },
+  { "q": "MySQL 中 VARCHAR 和 CHAR 的区别是？", "options": ["没有区别", "VARCHAR 可变长度，CHAR 固定长度", "CHAR 可变长度", "存储方式相同"], "answer": "VARCHAR 可变长度，CHAR 固定长度", "explanation": "CHAR 固定长度，VARCHAR 可变长度，VARCHAR 更节省空间。" },
+  { "q": "MySQL 中如何备份数据库？", "options": ["BACKUP", "mysqldump", "EXPORT", "SAVE"], "answer": "mysqldump", "explanation": "mysqldump 是 MySQL 的备份工具，导出数据库为 SQL 文件。" },
+  { "q": "MySQL 中事务隔离级别有几种？", "options": ["2 种", "3 种", "4 种", "5 种"], "answer": "4 种", "explanation": "四种隔离级别：READ UNCOMMITTED、READ COMMITTED、REPEATABLE READ、SERIALIZABLE。" },
+  { "q": "什么是脏读？", "options": ["读取已提交数据", "读取未提交数据", "重复读取", "幻读"], "answer": "读取未提交数据", "explanation": "脏读是读取其他事务未提交的数据，可能导致数据不一致。" },
+  { "q": "什么是幻读？", "options": ["读取未提交数据", "同一查询返回不同行数", "重复读取相同数据", "读取已删除数据"], "answer": "同一查询返回不同行数", "explanation": "幻读是同一查询在不同时间返回不同的行数，因为其他事务插入或删除了数据。" },
+  { "q": "MySQL 中如何创建索引？", "options": ["ADD INDEX", "CREATE INDEX", "两者都可以", "INDEX CREATE"], "answer": "两者都可以", "explanation": "CREATE INDEX 和 ALTER TABLE ADD INDEX 都可创建索引。" },
+  { "q": "MySQL 中 LIMIT 10, 5 表示什么？", "options": ["前 10 条", "跳过 10 条取 5 条", "前 5 条", "第 10 到 15 条"], "answer": "跳过 10 条取 5 条", "explanation": "LIMIT offset, count 跳过 offset 条，取 count 条。" },
+  { "q": "MySQL 中如何查看慢查询？", "options": ["SHOW SLOW", "慢查询日志", "EXPLAIN", "PROFILE"], "answer": "慢查询日志", "explanation": "启用慢查询日志记录执行时间超过阈值的查询。" },
+  { "q": "什么是覆盖索引？", "options": ["索引覆盖所有列", "查询的列都在索引中", "主键索引", "唯一索引"], "answer": "查询的列都在索引中", "explanation": "覆盖索引是查询的所有列都在索引中，无需回表查询。" },
+  { "q": "MySQL 中如何优化 LIKE 查询？", "options": ["前缀匹配可以用索引", "后缀匹配用索引", "全模糊用索引", "不能优化"], "answer": "前缀匹配可以用索引", "explanation": "LIKE 'prefix%' 可用索引，LIKE '%suffix' 或 '%middle%' 不能用索引。" },
+  { "q": "MySQL 中 NOW() 函数返回什么？", "options": ["当前日期", "当前时间", "当前日期时间", "时间戳"], "answer": "当前日期时间", "explanation": "NOW() 返回当前日期和时间，CURDATE() 返回日期，CURTIME() 返回时间。" },
+  { "q": "MySQL 中如何设置字符集？", "options": ["SET CHARSET", "SET NAMES", "CHARACTER SET", "后两者都可以"], "answer": "后两者都可以", "explanation": "SET NAMES 和 CHARACTER SET 都可设置字符集。" }
+]
